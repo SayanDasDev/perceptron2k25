@@ -1,6 +1,6 @@
 import useFonts from "@/hooks/use-fonts";
-import Countdown from "./countdown";
 
+import Countdown from "./countdown";
 
 const HeroCardRight = () => {
   const { sub, sub_cap } = useFonts();
