@@ -1,11 +1,8 @@
 export interface EventItem {
   title: string
   description: string
-  href: string
   imageURL: string
-  rules: string[]
   prize: string
-  formURL: string
+  //@ts-ignore
+  content: () => JSX.Element
 }
-
-export type EventCardItem = Pick<EventItem, 'title' | 'href' | 'imageURL'>
