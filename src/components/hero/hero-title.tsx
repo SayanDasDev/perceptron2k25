@@ -1,7 +1,6 @@
 import useFonts from "@/hooks/use-fonts";
 
 const HeroTitle = () => {
-
   const { sub_cap, main } = useFonts();
 
   return (
@@ -14,7 +13,7 @@ const HeroTitle = () => {
       <p
         className={`${main.className} hero-text font-size-lg text-gray-50 font-extrabold leading-snug`}
       >
-        PERCEPTRON 2025
+        PERCEPTRON 2K25
       </p>
     </div>
   );

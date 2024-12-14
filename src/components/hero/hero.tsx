@@ -47,19 +47,25 @@ const Hero = () => {
       <Navbar />
       <div className="text-gray-50 h-4 xl:hidden ml-auto mr-6 my-6" />
       <div className="w-full z-10 hero-title-grid xl:flex items-center justify-between mt-8 xl:mt-0 xl:px-6 xl:pb-8">
-        <Logos.Perceptron className="w-[20vw] md:w-[18vw] xl:w-[15vw] hero-title-logo-left" />
+        <Logos.Perceptron className="w-[20vw] hero-title-logo-left" />
         <HeroTitle />
-        <Logos.RKM className="w-[18vw] md:w-[16vw] xl:w-[12vw] hero-title-logo-right" />
+        <Image
+          src={`/icons/rkm-logo.webp`}
+          alt=""
+          width={400}
+          height={400}
+          className="w-[20vw] object-cover hero-title-logo-right"
+        />
       </div>
       <div className="grid hero-cards-grid">
         <HeroCardLeft />
         <div className="hero-cta flex flex-col-reverse col-span-1 md:col-span-2 xl:col-span-1 xl:flex-col gap-6 items-center justify-center mx-auto">
           <Button
-            className={`${sub.className} xl:translate-y-[-150%]`}
+            className={`${sub.className} xl:translate-y-[-150%] cursor-pointer z-[100]`}
             variant={"heroCTA"}
             size={"responsiveXL"}
           >
-            Register
+            Brochure
           </Button>
           <Button
             onClick={() => setVideoPlaying(!videoPlaying)}

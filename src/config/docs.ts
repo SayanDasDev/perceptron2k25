@@ -7,11 +7,6 @@ interface DocsConfig {
 export const docsConfig: DocsConfig = {
   navbarItems: [
     {
-      title: "Home",
-      href: "#home",
-      items: [],
-    },
-    {
       title: "About",
       href: "#about",
       items: [],
@@ -59,18 +54,8 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      title: "Schedule",
-      href: "#schedule",
-      items: [],
-    },
-    {
-      title: "Venue",
-      href: "#venue",
-      items: [],
-    },
-    {
-      title: "Gallery",
-      href: "#gallery",
+      title: "Speakers",
+      href: "#speakers",
       items: [],
     },
     {
@@ -84,13 +69,18 @@ export const docsConfig: DocsConfig = {
       items: [],
     },
     {
+      title: "Gallery",
+      href: "#gallery",
+      items: [],
+    },
+    {
       title: "FAQs",
       href: "#faqs",
       items: [],
     },
     {
       title: "Contact",
-      href: "#contact",
+      href: "#footer",
       items: [],
     },
   ],

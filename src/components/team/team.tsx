@@ -5,7 +5,7 @@ import Organizers from "./organizers";
 const Team = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center space-y-12">
-      <Heading heading="Team" />
+      <Heading heading="Our Team" />
       <Organizers />
       <Designers />
     </div>

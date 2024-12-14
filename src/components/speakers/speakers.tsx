@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 
 import Heading from "../heading";
+import AnimatedGradientText from "../ui/animated-gradient-text";
 
 export function Speakers() {
   return (
@@ -25,7 +26,16 @@ const EmptyState = () => {
       >
         <div className="flex flex-col items-center justify-center px-4 py-1 transition ease-out hover:duration-300 text-white-100">
           <div className="text-9xl">📢</div>
-          <div className="text-xl text-white">Wil be declared soon</div>
+          {/* <div className="text-xl pt-4 text-white">Wil be declared soon</div> */}
+          <AnimatedGradientText>
+            <span
+              className={cn(
+                `inline animate-gradient text-2xl bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
+              )}
+            >
+              Will be decleared soon...
+            </span>
+          </AnimatedGradientText>
         </div>
       </div>
     </div>
