@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 
 import useFonts from "@/hooks/use-fonts";
 
+import { HoverBorderGradient } from "../ui/hover-border-gradient";
+
 const Hero = () => {
   const { mono, sub } = useFonts();
 
@@ -60,13 +62,20 @@ const Hero = () => {
       <div className="grid hero-cards-grid">
         <HeroCardLeft />
         <div className="hero-cta flex flex-col-reverse col-span-1 md:col-span-2 xl:col-span-1 xl:flex-col gap-6 items-center justify-center mx-auto">
-          <Button
+          {/* <Button
             className={`${sub.className} xl:translate-y-[-150%] cursor-pointer z-[100]`}
             variant={"heroCTA"}
             size={"responsiveXL"}
           >
             Brochure
-          </Button>
+          </Button> */}
+          <HoverBorderGradient
+            containerClassName="rounded-full xl:translate-y-[-150%] cursor-pointer z-[100] !bg-glassmorphic`"
+            as="button"
+            className={`${sub.className} cursor-pointer z-[100] bg-glassmorphic text-2xl px-8`}
+          >
+            <span>Brochure</span>
+          </HoverBorderGradient>
           <Button
             onClick={() => setVideoPlaying(!videoPlaying)}
             className={`${sub.className} hero-play rounded-full w-20 h-20 xl:w-28 xl:h-28 px-0`}
