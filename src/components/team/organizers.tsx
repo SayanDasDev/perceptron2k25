@@ -11,11 +11,9 @@ import { buttonVariants } from "../ui/button";
 import { WobbleCard } from "../ui/wobble-card";
 
 const Organizers = () => {
-  const data = TeamData;
-
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4 gap-10 max-w-7xl mx-auto w-full">
-      {TeamData.map((data, i) => (
+      {TeamData.map((member, i) => (
         <WobbleCard
           key={i}
           containerClassName="col-span-1 group h-full bg-slate-950 h-72 w-72 "
@@ -28,36 +26,36 @@ const Organizers = () => {
             Organizer
           </Badge>
           <Image
-            src={data.avatar}
+            src={member.avatar}
             fill
             alt={""}
             className="absolute inset-0 -z-10 object-cover rounded-2xl brightness-50 group-hover:brightness-100 ease-in-out duration-300 transition-all"
           />
           <div className="flex flex-col items-center justify-center space-y-4">
             <div className="font-bold text-background text-2xl">
-              {data.name}
+              {member.name}
             </div>
             <div className="flex gap-4 justify-around ">
-              {data.github && (
+              {member.links?.github && (
                 <Link
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
-                  href={data.github}
+                  href={member.links?.github}
                 >
                   <Github size={16} />
                 </Link>
               )}
-              {data.linkedIn && (
+              {member.links?.linkedIn && (
                 <Link
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
-                  href={data.linkedIn}
+                  href={member.links?.linkedIn}
                 >
                   <Linkedin size={16} />
                 </Link>
               )}
-              {data.website && (
+              {member.links?.website && (
                 <Link
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
-                  href={data.website}
+                  href={member.links?.website}
                 >
                   <Globe size={16} />
                 </Link>

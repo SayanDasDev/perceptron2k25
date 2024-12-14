@@ -2,6 +2,7 @@
 
 import About from "@/components/about/about";
 import Events from "@/components/events/events";
+import FAQ from "@/components/faq/faq";
 import Hero from "@/components/hero/hero";
 import NavMenu from "@/components/nav-menu";
 import { Speakers } from "@/components/speakers/speakers";
@@ -40,6 +41,10 @@ export default function Home() {
 
       <section id="team" className="flex mt-20 bg-slate-950">
         <Team />
+      </section>
+
+      <section id="faqs" className="flex mt-20 bg-slate-950">
+        <FAQ />
       </section>
     </main>
   );
