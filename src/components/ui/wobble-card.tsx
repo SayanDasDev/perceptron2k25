@@ -1,6 +1,9 @@
 "use client";
+
 import React, { useState } from "react";
+
 import { motion } from "framer-motion";
+
 import { cn } from "@/lib/utils";
 
 export const WobbleCard = ({
@@ -67,12 +70,15 @@ export const WobbleCard = ({
 
 const Noise = () => {
   return (
-    <div
-      className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]"
-      style={{
-        backgroundImage: "url(/noise.webp)",
-        backgroundSize: "30%",
-      }}
-    ></div>
+    <>
+      <div
+        className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)] z-[-5] "
+        style={{
+          backgroundImage: "url(/noise.webp)",
+          backgroundSize: "30%",
+        }}
+      ></div>
+      <div className="absolute inset-0 w-full h-full scale-[1.2] transform z-[-4] group-hover:bg-gradient-to-t from-slate-950 to-transparent"></div>
+    </>
   );
 };

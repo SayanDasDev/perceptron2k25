@@ -6,10 +6,11 @@ import Hero from "@/components/hero/hero";
 import NavMenu from "@/components/nav-menu";
 import { Speakers } from "@/components/speakers/speakers";
 import Sponsors from "@/components/sponsors/sponsors";
+import Team from "@/components/team/team";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden">
+    <main className="overflow-x-hidden bg-slate-950">
       <NavMenu />
       <section
         id="hero"
@@ -33,8 +34,12 @@ export default function Home() {
         <Speakers />
       </section>
 
-      <section id="sponsors" className="flex bg-slate-950">
+      <section id="sponsors" className="flex mt-20 bg-slate-950">
         <Sponsors />
+      </section>
+
+      <section id="team" className="flex mt-20 bg-slate-950">
+        <Team />
       </section>
     </main>
   );
