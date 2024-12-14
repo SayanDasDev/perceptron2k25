@@ -6,5 +6,6 @@ export interface TeamItem {
     github?: string;
     linkedIn?: string;
     website?: string;
+    mobile?: string;
   }
 }

@@ -11,6 +11,7 @@ import { Github, Globe, Linkedin } from "lucide-react";
 import { TeamData } from "@/config/team";
 import { cn } from "@/lib/utils";
 
+import { Badge } from "../ui/badge";
 import { buttonVariants } from "../ui/button";
 
 export const Designers = ({ autoplay = true }: { autoplay?: boolean }) => {
@@ -106,12 +107,15 @@ export const Designers = ({ autoplay = true }: { autoplay?: boolean }) => {
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold text-background">
+            <Badge
+              variant={"secondary"}
+              className="text-sm rounded-full text-foreground"
+            >
+              {TeamData[active].role}
+            </Badge>
+            <h3 className="text-3xl font-bold text-background">
               {TeamData[active].name}
             </h3>
-            <p className="text-sm text-background/80">
-              {TeamData[active].role}
-            </p>
             <motion.p className="text-lg w-80 text-gray-500 mt-8 dark:text-neutral-300">
               {Object.entries(TeamData[active].links || {}).map(
                 ([social, link], index) => (

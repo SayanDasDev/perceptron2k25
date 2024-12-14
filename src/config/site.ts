@@ -5,8 +5,10 @@ export const siteConfig = {
   description:
     "Techfest at Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) 2025",
   links: {
-    twitter: "https://twitter.com/imdassayan",
-    github: "https://github.com/sayandasdev",
+    facebook: "https://www.facebook.com/rkmveri",
+    instagram: "https://www.instagram.com/rkmveri",
+    linkedin: "https://www.linkedin.com/school/rkmveri",
+    mail: "https://twitter.com/rkmveri",
   },
   keywords: [
     "Perceptron",

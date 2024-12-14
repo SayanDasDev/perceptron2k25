@@ -3,6 +3,8 @@
 import About from "@/components/about/about";
 import Events from "@/components/events/events";
 import FAQ from "@/components/faq/faq";
+import Footer from "@/components/footer/footer";
+import { Gallery } from "@/components/gallery/gallery";
 import Hero from "@/components/hero/hero";
 import NavMenu from "@/components/nav-menu";
 import { Speakers } from "@/components/speakers/speakers";
@@ -43,8 +45,16 @@ export default function Home() {
         <Team />
       </section>
 
+      <section id="gallery" className="flex mt-20 bg-slate-950">
+        <Gallery />
+      </section>
+
       <section id="faqs" className="flex mt-20 bg-slate-950">
         <FAQ />
+      </section>
+
+      <section id="footer" className="flex mt-20 bg-slate-950">
+        <Footer />
       </section>
     </main>
   );

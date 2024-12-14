@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { Github, Globe, Linkedin } from "lucide-react";
+import { Github, Globe, Linkedin, Phone } from "lucide-react";
 
 import { TeamData } from "@/config/team";
 import { cn } from "@/lib/utils";
@@ -58,6 +58,14 @@ const Organizers = () => {
                   href={member.links?.website}
                 >
                   <Globe size={16} />
+                </Link>
+              )}
+              {member.links?.mobile && (
+                <Link
+                  className={cn(buttonVariants({ variant: "avatarLinks" }))}
+                  href={`tel:${member.links.mobile}`}
+                >
+                  <Phone size={16} />
                 </Link>
               )}
             </div>
