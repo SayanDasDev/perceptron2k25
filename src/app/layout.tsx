@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
+import { DM_Sans } from "next/font/google";
 
 import { siteConfig } from "@/config/site";
-import { DM_Sans } from "next/font/google";
-import "./globals.css";
 
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
@@ -46,21 +46,21 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        media: '(prefers-color-scheme: light)',
-        url: '/favicon-light.ico',
-        href: '/favicon-light.ico',
+        media: "(prefers-color-scheme: light)",
+        url: "/favicon-light.ico",
+        href: "/favicon-light.ico",
       },
       {
-        media: '(prefers-color-scheme: dark)',
-        url: '/favicon-dark.ico',
-        href: '/favicon-dark.ico',
+        media: "(prefers-color-scheme: dark)",
+        url: "/favicon-dark.ico",
+        href: "/favicon-dark.ico",
       },
     ],
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-}
+};
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -69,9 +69,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const wavesConfig = {
+    dotSize: 5.5,
+    dotSpacing: 13,
+    dotOpacity: 0.7,
+    waveIntensity: 99,
+    waveRadius: 200,
+    dotColor: "rgba(100, 100, 255, 1)",
+    glowColor: "rgba(100, 100, 255, 1)",
+    enableNoise: false,
+    noiseOpacity: 0.03,
+    enableMouseGlow: false,
+    initialPerformance: "medium" as const,
+  };
+
   return (
     <html lang="en">
-      <body className={`${font.className} no-scrollbar`}>{children}</body>
+      <body className={`${font.className} no-scrollbar relative`}>
+        {children}
+      </body>
     </html>
   );
 }
