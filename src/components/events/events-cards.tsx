@@ -59,7 +59,7 @@ export function EventsCards() {
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === "object" ? (
-          <div className="fixed inset-0  grid place-items-center z-[100]">
+          <div className="fixed inset-0 grid place-items-center z-[100]">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -75,7 +75,7 @@ export function EventsCards() {
                   duration: 0.05,
                 },
               }}
-              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+              className="flex absolute top-2 right-2 md:hidden items-center justify-center bg-white rounded-full h-6 w-6"
               onClick={() => setActive(null)}
             >
               <CloseIcon />
@@ -83,7 +83,7 @@ export function EventsCards() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[98%]  flex flex-col bg-slate-900 sm:rounded-3xl overflow-hidden"
+              className="w-full md:w-[90vw] h-screen md:h-[95vh] pb-12 md:max-w-[1000px] md:max-h-[720px] border border-background/10 flex flex-col md:grid grid-cols-3 grid-rows-[clamp(40vh_300px_10vh)_1fr] md:gap-4 bg-slate-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -92,32 +92,33 @@ export function EventsCards() {
                   height={272}
                   src={active.imageURL}
                   alt={active.title}
-                  className="w-full h-56 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className="w-full h-80 md:h-full md:rounded-br-3xl object-cover object-top"
                 />
               </motion.div>
 
-              <div className="bg-slate-900">
-                <div className="flex justify-between flex-wrap gap-4 items-start p-4">
+              <div className="bg-slate-900 col-span-2 md:self-end">
+                <div className="flex flex-col flex-wrap gap-4 items-start p-4">
                   <div className="">
-                    <Badge
-                      variant={"secondary"}
-                      className="text-sm mb-2 rounded-full text-foreground"
+                    <motion.h3
+                      layoutId={`title-${active.title}-${id}`}
+                      className="font-bold text-background text-2xl"
                     >
-                      {active.prize}
-                    </Badge>
-                    <div className="">
-                      <motion.h3
-                        layoutId={`title-${active.title}-${id}`}
-                        className="font-bold text-background text-2xl"
+                      {active.title}
+                    </motion.h3>
+                    <motion.p
+                      layoutId={`description-${active.title}-${id}`}
+                      className="text-background/75"
+                    >
+                      {active.description}
+                    </motion.p>
+                    <div className="text-lg">
+                      Prize: &nbsp;
+                      <Badge
+                        variant={"secondary"}
+                        className="text-sm mt-2 rounded-full text-foreground"
                       >
-                        {active.title}
-                      </motion.h3>
-                      <motion.p
-                        layoutId={`description-${active.title}-${id}`}
-                        className="text-background"
-                      >
-                        {active.description}
-                      </motion.p>
+                        {active.prize}
+                      </Badge>
                     </div>
                   </div>
                   <div className="flex gap-2">
@@ -142,19 +143,22 @@ export function EventsCards() {
                     </motion.a>
                   </div>
                 </div>
-                <div className="pt-4 relative px-4">
-                  <motion.div
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="text-background/75 max-h-80 sm:max-h-28 overflow-y-scroll text-xs md:text-sm lg:text-base md:h-fit pb-10 flex flex-col items-start gap-4 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
-                  >
-                    {typeof active.content === "function"
-                      ? active.content()
-                      : active.content}
-                  </motion.div>
-                </div>
+              </div>
+              <div className="pt-4 relative px-4 col-span-3">
+                <p className="text-2xl font-bold text-background/80 mb-4">
+                  Rules and Guidelines
+                </p>
+                <motion.div
+                  layout
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="text-background/75 h-[320px] overflow-y-scroll text-xs md:text-sm lg:text-base pb-10 flex flex-col items-start gap-4 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                >
+                  {typeof active.content === "function"
+                    ? active.content()
+                    : active.content}
+                </motion.div>
               </div>
             </motion.div>
           </div>
@@ -181,7 +185,7 @@ export function EventsCards() {
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-background text-center"
+                  className="font-bold text-background text-center text-xl"
                 >
                   {card.title}
                 </motion.h3>
