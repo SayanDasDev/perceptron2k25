@@ -72,6 +72,7 @@ const Hero = () => {
           <HoverBorderGradient
             containerClassName="rounded-full xl:translate-y-[-150%] cursor-pointer z-[100] !bg-glassmorphic`"
             as="button"
+            // onClick={() => }
             className={`${sub.className} cursor-pointer z-[100] bg-glassmorphic text-2xl px-8`}
           >
             <span>Brochure</span>

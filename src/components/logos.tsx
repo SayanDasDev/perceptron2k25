@@ -34,11 +34,11 @@ export const Logos = {
             y2="162.572"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#CE0D0D" />
-            <stop offset="0.31451" stop-color="#FF911D" />
-            <stop offset="0.589076" stop-color="#FF1A81" />
-            <stop offset="0.737851" stop-color="#DE01E4" />
-            <stop offset="1" stop-color="#31DFF8" />
+            <stop stopColor="#CE0D0D" />
+            <stop offset="0.31451" stopColor="#FF911D" />
+            <stop offset="0.589076" stopColor="#FF1A81" />
+            <stop offset="0.737851" stopColor="#DE01E4" />
+            <stop offset="1" stopColor="#31DFF8" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_89_156"
@@ -48,11 +48,11 @@ export const Logos = {
             y2="162.572"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#CE0D0D" />
-            <stop offset="0.31451" stop-color="#FF911D" />
-            <stop offset="0.589076" stop-color="#FF1A81" />
-            <stop offset="0.737851" stop-color="#DE01E4" />
-            <stop offset="1" stop-color="#31DFF8" />
+            <stop stopColor="#CE0D0D" />
+            <stop offset="0.31451" stopColor="#FF911D" />
+            <stop offset="0.589076" stopColor="#FF1A81" />
+            <stop offset="0.737851" stopColor="#DE01E4" />
+            <stop offset="1" stopColor="#31DFF8" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_89_156"
@@ -62,11 +62,11 @@ export const Logos = {
             y2="162.572"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#CE0D0D" />
-            <stop offset="0.31451" stop-color="#FF911D" />
-            <stop offset="0.589076" stop-color="#FF1A81" />
-            <stop offset="0.737851" stop-color="#DE01E4" />
-            <stop offset="1" stop-color="#31DFF8" />
+            <stop stopColor="#CE0D0D" />
+            <stop offset="0.31451" stopColor="#FF911D" />
+            <stop offset="0.589076" stopColor="#FF1A81" />
+            <stop offset="0.737851" stopColor="#DE01E4" />
+            <stop offset="1" stopColor="#31DFF8" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_89_156"
@@ -76,11 +76,11 @@ export const Logos = {
             y2="162.572"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#CE0D0D" />
-            <stop offset="0.31451" stop-color="#FF911D" />
-            <stop offset="0.589076" stop-color="#FF1A81" />
-            <stop offset="0.737851" stop-color="#DE01E4" />
-            <stop offset="1" stop-color="#31DFF8" />
+            <stop stopColor="#CE0D0D" />
+            <stop offset="0.31451" stopColor="#FF911D" />
+            <stop offset="0.589076" stopColor="#FF1A81" />
+            <stop offset="0.737851" stopColor="#DE01E4" />
+            <stop offset="1" stopColor="#31DFF8" />
           </linearGradient>
         </defs>
       </svg>

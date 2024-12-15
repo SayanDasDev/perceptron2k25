@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { Github, Globe, Linkedin, Phone } from "lucide-react";
 
-import { TeamData } from "@/config/team";
+import { OrganizersData } from "@/config/team";
 import { cn } from "@/lib/utils";
 
 import { Badge } from "../ui/badge";
@@ -13,7 +13,7 @@ import { WobbleCard } from "../ui/wobble-card";
 const Organizers = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4 gap-10 max-w-7xl mx-auto w-full">
-      {TeamData.map((member, i) => (
+      {OrganizersData.map((member, i) => (
         <WobbleCard
           key={i}
           containerClassName="col-span-1 group h-full bg-slate-950 h-72 w-72 "
@@ -21,9 +21,9 @@ const Organizers = () => {
         >
           <Badge
             variant={"secondary"}
-            className="text-lg bg-glassmorphic text-primary rounded-full group-hover:bg-background"
+            className="text-lg bg-glassmorphic text-primary rounded-full group-hover:bg-background group-hover:text-foreground"
           >
-            Organizer
+            {member.role}
           </Badge>
           <Image
             src={member.avatar}
@@ -38,6 +38,7 @@ const Organizers = () => {
             <div className="flex gap-4 justify-around ">
               {member.links?.github && (
                 <Link
+                  target="_blank"
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
                   href={member.links?.github}
                 >
@@ -46,6 +47,7 @@ const Organizers = () => {
               )}
               {member.links?.linkedIn && (
                 <Link
+                  target="_blank"
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
                   href={member.links?.linkedIn}
                 >
@@ -54,6 +56,7 @@ const Organizers = () => {
               )}
               {member.links?.website && (
                 <Link
+                  target="_blank"
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
                   href={member.links?.website}
                 >
@@ -62,6 +65,7 @@ const Organizers = () => {
               )}
               {member.links?.mobile && (
                 <Link
+                  target="_blank"
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
                   href={`tel:${member.links.mobile}`}
                 >

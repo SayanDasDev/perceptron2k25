@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import Script from "next/script";
 
 import { siteConfig } from "@/config/site";
 
@@ -43,23 +44,6 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
     creator: "@imdassayan",
   },
-  icons: {
-    icon: [
-      {
-        media: "(prefers-color-scheme: light)",
-        url: "/favicon-light.ico",
-        href: "/favicon-light.ico",
-      },
-      {
-        media: "(prefers-color-scheme: dark)",
-        url: "/favicon-dark.ico",
-        href: "/favicon-dark.ico",
-      },
-    ],
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
-  manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
 const font = DM_Sans({ subsets: ["latin"] });
@@ -85,9 +69,23 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${font.className} no-scrollbar relative`}>
-        {children}
-      </body>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="Perceptron 2k25" />
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-11GMXT55VN"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-11GMXT55VN');
+          `}
+        </Script>
+      </head>
+      <body className={`${font.className} no-scrollbar`}>{children}</body>
     </html>
   );
 }

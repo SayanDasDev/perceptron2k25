@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 
@@ -28,17 +28,18 @@ const Footer = () => {
             <p className="text-background/50">
               (Accredited by NAAC with A++ Grade)
             </p>
-            <ul className="mt-8 space-y-1 text-sm text-background">
-              <li>Monday to Friday: 10am - 5pm</li>
-              <li>Weekend: 10am - 3pm</li>
+            <ul className="mt-8 space-y-1 text-sm text-background/50">
+              <li>10th and 11th January, 2025</li>
+              <li>Friday and Saturday: 9:30am - 5:30pm</li>
             </ul>
 
-            <ul className="mt-8 flex gap-6">
+            <ul className="mt-8 flex gap-6 mb-2">
               {Object.entries(siteConfig.links).map(([key, value], i) => (
                 <li key={i}>
                   <a
                     href={value}
                     className="text-background/70 hover:text-background"
+                    target="_blank"
                   >
                     {key == "mail" && <Mail size={24} />}
                     {key == "instagram" && <Instagram size={24} />}
@@ -48,15 +49,32 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
+            {siteConfig.phone.map((phone, i) => (
+              <div
+                key={i}
+                className="flex text-background/70 hover:text-background"
+              >
+                <div className="ml-2 flex flex-col justify-center gap-2 ">
+                  <div className="flex flex items-center gap-2">
+                    <Phone size={20} />
+                    <a
+                      key={i}
+                      href={phone}
+                      className="text-background/70 hover:text-background text-lg"
+                    >
+                      +91 {phone.replace("tel:", "")}
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
         <div className="mt-12 border-t border-gray-100 pt-12 dark:border-gray-800">
-          <div className="flex items-center justify-between">
-            <p className="mt-8 text-xs text-background/70 sm:mt-0">
-              &copy; 2025. Perceptron. All rights reserved.
-            </p>
-          </div>
+          <p className="mt-8 text-xs text-background/70 text-center lg:text-left sm:mt-0">
+            &copy; 2025. Perceptron. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

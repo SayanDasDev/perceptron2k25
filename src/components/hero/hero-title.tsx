@@ -8,7 +8,7 @@ const HeroTitle = () => {
       <p
         className={`${sub_cap.className} font-size-sm leading-snug text-gray-50 font-extrabold whitespace-nowrap`}
       >
-        The techfest at RKMVERI
+        The tech-fest at RKMVERI
       </p>
       <p
         className={`${main.className} hero-text font-size-lg text-gray-50 font-extrabold leading-snug`}
