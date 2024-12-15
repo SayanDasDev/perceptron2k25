@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: "Perceptron 2025",
-  url: "https://perceptron25.cs.rkmvu.ac.in",
+  url: "https://cs.rkmvu.ac.in/perceptron25",
   ogImage: "https://raw.githubusercontent.com/SayanDasDev/images/main/perceptron-og.png",
   description:
-    "Techfest at Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) 2025",
+    "Annual Techfest at Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) 2025",
   links: {
     facebook: "https://www.facebook.com/perceptron.rkmveri",
     instagram: "https://www.instagram.com/perceptron_2025",
@@ -15,6 +15,8 @@ export const siteConfig = {
     "Perceptron",
     "RKMVERI",
     "Techfest 2025",
+    "Technology",
+    "Annual Techfest",
     "Computer Science",
     "Coding Competition",
     "Hackathon",
