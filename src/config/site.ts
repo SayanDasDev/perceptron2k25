@@ -10,7 +10,7 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/company/perceptron-rkmveri/",
     mail: "mailto:perceptron.cs@gm.rkmvu.ac.in",
   },
-  phone: ["tel:9093372688", "tel:9051532999"],
+  phone: ["tel:9093372699", "tel:9051532999"],
   keywords: [
     "Perceptron",
     "RKMVERI",

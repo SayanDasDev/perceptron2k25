@@ -93,7 +93,7 @@ const About = () => {
                 <div className="w-[5%] max-sm:hidden rounded-md mt-[18px] h-[3px] bg-primary"></div>
                 <div className="flex flex-1 justify-center items-center">
                   <div
-                    className={`${serif_font.className} text-ellipsis font-size-sm text-justify sm:leading-10 overflow-hidden text-slate-300`}
+                    className={`${serif_font.className} text-ellipsis font-size-sm text-justify leading-6 sm:leading-10 overflow-hidden text-slate-300`}
                   >
                     {about == "RKMVERI" ? aboutRKMVERI() : aboutPERCEPTRON()}
                   </div>

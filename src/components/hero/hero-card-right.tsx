@@ -20,7 +20,7 @@ const HeroCardRight = () => {
       <p
         className={`${sub.className} text-[clamp(6px,3vw,16px)] pb-2 text-gray-400 font-extrabold`}
       >
-        Perceptron stats in
+        Perceptron starts in
       </p>
       <Countdown />
     </div>

@@ -86,7 +86,7 @@ export const TeamLeadsData: TeamItem[] = [
     role: "The Turing Show Lead",
     avatar: "/images/biswajit.jpg",
     links: {
-      github: "github.com/biswajit-github-2022",
+      github: "https://github.com/biswajit-github-2022",
       linkedIn: "https://www.linkedin.com/in/biswajit-rana/",
       website: "https://biswajit-github-2022.github.io/portfolio_website/",
       mobile: "7908105640"
@@ -184,7 +184,7 @@ export const DesignersData: TeamItem[] = [
     },
   },
   {
-    name: "Rajashi Saha",
+    name: "Rajarshi Saha",
     role: "Designer",
     avatar: "/images/Rajarshi.jpg",
     links: {
