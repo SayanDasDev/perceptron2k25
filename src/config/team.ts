@@ -26,7 +26,7 @@ export const OrganizersData: TeamItem[] = [
   {
     name: "Anurag Joardar",
     role: "Convenor",
-    avatar: "/images/anurag.jpg",
+    avatar: "/images/Anurag.jpg",
     links: {
       github: "https://github.com/Achilles1012",
       linkedIn: "https://www.linkedin.com/in/anuragjoardar2000",
