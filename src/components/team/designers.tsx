@@ -1,203 +1,79 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
-import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
-import { AnimatePresence, motion } from "framer-motion";
-import { Github, Globe, Linkedin } from "lucide-react";
+import { Github, Globe, Linkedin, Phone } from "lucide-react";
 
 import { DesignersData } from "@/config/team";
 import { cn } from "@/lib/utils";
 
 import { Badge } from "../ui/badge";
 import { buttonVariants } from "../ui/button";
+import { WobbleCard } from "../ui/wobble-card";
 
-export const Designers = ({ autoplay = true }: { autoplay?: boolean }) => {
-  const [active, setActive] = useState(0);
-
-  const handleNext = () => {
-    setActive((prev) => (prev + 1) % DesignersData.length);
-  };
-
-  const handlePrev = () => {
-    setActive(
-      (prev) => (prev - 1 + DesignersData.length) % DesignersData.length
-    );
-  };
-
-  const isActive = (index: number) => {
-    return index === active;
-  };
-
-  // TODO: Timer should stop once the user starts to navigate
-
-  useEffect(() => {
-    if (autoplay) {
-      const interval = setInterval(handleNext, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [autoplay]);
-
-  const randomRotateY = () => {
-    return Math.floor(Math.random() * 21) - 10;
-  };
+const Designers = () => {
   return (
-    <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
-      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
-        <div>
-          <div className="relative h-80 w-full">
-            <AnimatePresence>
-              {DesignersData.map((testimonial, index) => (
-                <motion.div
-                  key={testimonial.avatar}
-                  initial={{
-                    opacity: 0,
-                    scale: 0.9,
-                    z: -100,
-                    rotate: randomRotateY(),
-                  }}
-                  animate={{
-                    opacity: isActive(index) ? 1 : 0.7,
-                    scale: isActive(index) ? 1 : 0.95,
-                    z: isActive(index) ? 0 : -100,
-                    rotate: isActive(index) ? 0 : randomRotateY(),
-                    zIndex: isActive(index)
-                      ? 999
-                      : DesignersData.length + 2 - index,
-                    y: isActive(index) ? [0, -80, 0] : 0,
-                  }}
-                  exit={{
-                    opacity: 0,
-                    scale: 0.9,
-                    z: 100,
-                    rotate: randomRotateY(),
-                  }}
-                  transition={{
-                    duration: 0.4,
-                    ease: "easeInOut",
-                  }}
-                  className="absolute inset-0 origin-bottom"
-                >
-                  <Image
-                    src={testimonial.avatar}
-                    alt={testimonial.name}
-                    width={500}
-                    height={500}
-                    draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center"
-                  />
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          </div>
-        </div>
-        <div className="flex justify-between flex-col py-4">
-          <motion.div
-            key={active}
-            initial={{
-              y: 20,
-              opacity: 0,
-            }}
-            animate={{
-              y: 0,
-              opacity: 1,
-            }}
-            exit={{
-              y: -20,
-              opacity: 0,
-            }}
-            transition={{
-              duration: 0.2,
-              ease: "easeInOut",
-            }}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4 gap-10 max-w-7xl mx-auto w-full">
+      {DesignersData.map((member, i) => (
+        <WobbleCard
+          key={i}
+          containerClassName="col-span-1 group h-full bg-slate-950 h-72 w-72 "
+          className="p-4 !px-4 flex flex-col items-center justify-between no-scrollbar"
+        >
+          <Badge
+            variant={"secondary"}
+            className="text-lg bg-glassmorphic text-primary rounded-full group-hover:bg-background group-hover:text-foreground"
           >
-            <Badge
-              variant={"secondary"}
-              className="text-sm rounded-full mb-2 text-foreground"
-            >
-              {DesignersData[active].role}
-            </Badge>
-            <h3 className="text-3xl font-bold text-background">
-              {DesignersData[active].name}
-            </h3>
-            <motion.p className="text-lg w-80 text-gray-500 mt-8 dark:text-neutral-300">
-              {Object.entries(DesignersData[active].links || {}).map(
-                ([social, link], index) => (
-                  <motion.span
-                    key={index}
-                    initial={{
-                      filter: "blur(10px)",
-                      opacity: 0,
-                      y: 5,
-                    }}
-                    animate={{
-                      filter: "blur(0px)",
-                      opacity: 1,
-                      y: 0,
-                    }}
-                    transition={{
-                      duration: 0.2,
-                      ease: "easeInOut",
-                      delay: 0.02 * index,
-                    }}
-                    className="inline-block"
-                  >
-                    {social == "github" ? (
-                      <Link
-                        className={cn(
-                          buttonVariants({ variant: "ghost" }),
-                          "bg-background rounded-full mr-4"
-                        )}
-                        href={link}
-                      >
-                        <Github size={16} />
-                      </Link>
-                    ) : social == "linkedIn" ? (
-                      <Link
-                        className={cn(
-                          buttonVariants({ variant: "ghost" }),
-                          "bg-background rounded-full mr-4"
-                        )}
-                        href={link}
-                      >
-                        <Linkedin size={16} />
-                      </Link>
-                    ) : (
-                      social == "website" && (
-                        <Link
-                          className={cn(
-                            buttonVariants({ variant: "ghost" }),
-                            "bg-background rounded-full mr-4"
-                          )}
-                          href={link}
-                        >
-                          <Globe size={16} />
-                        </Link>
-                      )
-                    )}
-                  </motion.span>
-                )
+            {member.role}
+          </Badge>
+          <Image
+            src={member.avatar}
+            fill
+            alt={""}
+            className="absolute inset-0 -z-10 object-cover rounded-2xl brightness-50 group-hover:brightness-100 ease-in-out duration-300 transition-all"
+          />
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="font-bold text-background text-2xl">
+              {member.name}
+            </div>
+            <div className="flex gap-4 justify-around ">
+              {member.links?.github && (
+                <Link
+                  className={cn(buttonVariants({ variant: "avatarLinks" }))}
+                  href={member.links?.github}
+                >
+                  <Github size={16} />
+                </Link>
               )}
-            </motion.p>
-          </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
-            <button
-              onClick={handlePrev}
-              className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
-            >
-              <IconArrowLeft className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
-            </button>
-            <button
-              onClick={handleNext}
-              className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button"
-            >
-              <IconArrowRight className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
-            </button>
+              {member.links?.linkedIn && (
+                <Link
+                  className={cn(buttonVariants({ variant: "avatarLinks" }))}
+                  href={member.links?.linkedIn}
+                >
+                  <Linkedin size={16} />
+                </Link>
+              )}
+              {member.links?.website && (
+                <Link
+                  className={cn(buttonVariants({ variant: "avatarLinks" }))}
+                  href={member.links?.website}
+                >
+                  <Globe size={16} />
+                </Link>
+              )}
+              {member.links?.mobile && (
+                <Link
+                  className={cn(buttonVariants({ variant: "avatarLinks" }))}
+                  href={`tel:${member.links.mobile}`}
+                >
+                  <Phone size={16} />
+                </Link>
+              )}
+            </div>
           </div>
-        </div>
-      </div>
+        </WobbleCard>
+      ))}
     </div>
   );
 };
+
+export default Designers;

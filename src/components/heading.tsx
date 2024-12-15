@@ -6,7 +6,7 @@ const Heading = ({ heading }: { heading: string }) => {
   return (
     <div className="relative h-[120px] w-full bg-slate-950 flex flex-col items-center justify-center overflow-hidden rounded-md">
       <h1
-        className={`md:text-6xl text-3xl lg:text-8xl ${mono.className} font-bold text-center text-primary relative z-20`}
+        className={`text-7xl ${mono.className} font-bold text-center text-primary relative z-20`}
       >
         {heading}
       </h1>

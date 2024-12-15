@@ -21,7 +21,7 @@ const Organizers = () => {
         >
           <Badge
             variant={"secondary"}
-            className="text-lg bg-glassmorphic text-primary rounded-full group-hover:bg-background"
+            className="text-lg bg-glassmorphic text-primary rounded-full group-hover:bg-background group-hover:text-foreground"
           >
             {member.role}
           </Badge>

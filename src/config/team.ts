@@ -151,17 +151,6 @@ export const TeamLeadsData: TeamItem[] = [
 
 export const DesignersData: TeamItem[] = [
   {
-    name: "Sayan Das",
-    role: "Web Developer",
-    avatar: "/images/sayan_das.jpg",
-    links: {
-      github: "https://github.com/SayanDasDev",
-      linkedIn: "https://www.linkedin.com/in/das-sayan/",
-      website: "https://sayandas.co.in",
-      mobile: "7384802278"
-    },
-  },
-  {
     name: "Ayantanu Laha",
     role: "Design Team Lead",
     avatar: "/images/Ayantanu.jpg",
@@ -170,6 +159,17 @@ export const DesignersData: TeamItem[] = [
       linkedIn: "https://www.linkedin.com/in/ayantanu-laha-2002/",
       website: "https://ayantanu2002.github.io/resume/index.html",
       mobile: "9476169407",
+    },
+  },
+  {
+    name: "Sayan Das",
+    role: "Web Developer",
+    avatar: "/images/sayan_das.jpg",
+    links: {
+      github: "https://github.com/SayanDasDev",
+      linkedIn: "https://www.linkedin.com/in/das-sayan/",
+      website: "https://sayandas.co.in",
+      mobile: "7384802278"
     },
   },
   {
