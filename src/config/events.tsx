@@ -41,7 +41,7 @@ export const eventsConfig: EventItem[] = [
     title: "Better Call Tal",
     description: "Chess Competition",
     imageURL: "/images/chess.jpg",
-    prize: "6K",
+    prize: "₹ 6K",
     content: () => {
       return (
         <EventRulesList
@@ -96,7 +96,7 @@ export const eventsConfig: EventItem[] = [
     title: "Deep Think",
     description: "AI Hackathon",
     imageURL: "/images/hackathon.png",
-    prize: "6K",
+    prize: "₹ 6K",
     content: () => {
       return (
         <EventRulesList
@@ -131,7 +131,7 @@ export const eventsConfig: EventItem[] = [
     title: "The Turing Show",
     description: "Coding Competition",
     imageURL: "/images/coding.jpg",
-    prize: "6K",
+    prize: "₹ 6K",
     content: () => {
       return (
         <EventRulesList
@@ -152,7 +152,7 @@ export const eventsConfig: EventItem[] = [
     title: "Clash of Wheels",
     description: "Gaming Competition",
     imageURL: "/images/gaming.png",
-    prize: "6K",
+    prize: "₹ 6K",
     content: () => {
       return (
         <EventRulesList
@@ -194,7 +194,7 @@ export const eventsConfig: EventItem[] = [
     title: "Enigma Equation",
     description: "Puzzle Solving Competition",
     imageURL: "/images/puzzle.jpg",
-    prize: "6K",
+    prize: "₹ 6K",
     content: () => {
       return (
         <EventRulesList
@@ -244,7 +244,7 @@ export const eventsConfig: EventItem[] = [
     title: "Beyond the lines",
     description: "Creative Writing",
     imageURL: "/images/beyond_the_lines.jpg",
-    prize: "4K",
+    prize: "₹ 4K",
     content: () => {
       return (
         <EventRulesList
@@ -292,7 +292,7 @@ export const eventsConfig: EventItem[] = [
     title: "Lens and Light",
     description: "Photography Competition",
     imageURL: "/images/photography.png",
-    prize: "4K",
+    prize: "₹ 4K",
     content: () => {
       return (
         <EventRulesList
@@ -319,7 +319,7 @@ export const eventsConfig: EventItem[] = [
     title: "Under the Hammer",
     description: "Auction",
     imageURL: "/images/auction.png",
-    prize: "6K",
+    prize: "₹ 6K",
     content: () => {
       return (
         <EventRulesList

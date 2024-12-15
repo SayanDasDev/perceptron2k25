@@ -18,7 +18,7 @@ function BgVideo() {
     <div className="absolute bg-video inset-0 ">
       <ReactPlayer
         controls={false}
-        autoplay={true}
+        autoPlay={true}
         loop={true}
         url="https://videos.pexels.com/video-files/5091624/5091624-hd_1920_1080_24fps.mp4"
         playing

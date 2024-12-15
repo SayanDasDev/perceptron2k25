@@ -32,7 +32,7 @@ const Organizers = () => {
             className="absolute inset-0 -z-10 object-cover rounded-2xl brightness-50 group-hover:brightness-100 ease-in-out duration-300 transition-all"
           />
           <div className="flex flex-col items-center justify-center space-y-4">
-            <div className="font-bold text-background text-2xl">
+            <div className="font-bold text-background text-2xl drop-shadow-md">
               {member.name}
             </div>
             <div className="flex gap-4 justify-around ">

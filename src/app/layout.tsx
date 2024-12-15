@@ -85,7 +85,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${font.className} no-scrollbar`}>{children}</body>
+      <body className={`${font.className} no-scrollbar `}>{children}</body>
     </html>
   );
 }

@@ -89,6 +89,11 @@ body {
   }
 }
 
+::selection {
+  color: hsl(var(--primary));
+  background: hsl(var(--sidebar-primary));
+}
+
 html {
   scroll-behavior: smooth;
   margin: 0;
