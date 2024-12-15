@@ -30,6 +30,7 @@ const Sponsors = () => {
                 {Object.entries(sponsor.links || {}).map(
                   ([social, link], index) => (
                     <CardItem
+                      key={index}
                       translateZ={20}
                       as="button"
                       onClick={() => window.open(link, "_blank")}

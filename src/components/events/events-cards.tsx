@@ -92,7 +92,7 @@ export function EventsCards() {
                   height={272}
                   src={active.imageURL}
                   alt={active.title}
-                  className="w-full h-80 md:h-full md:rounded-br-3xl object-cover object-top"
+                  className="w-full max-md:h-[25vh] h-80 md:h-full md:rounded-br-3xl object-cover object-top"
                 />
               </motion.div>
 
@@ -170,7 +170,7 @@ export function EventsCards() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col justify-between items-center hover:bg-slate-900 dark: rounded-xl cursor-pointer md:border border-background/10"
+            className="p-4 flex flex-col justify-between items-center hover:bg-slate-900 rounded-xl cursor-pointer md:border border-background/10"
           >
             <div className="flex gap-4 justify-center items-center flex-col ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
