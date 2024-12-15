@@ -5,9 +5,10 @@ import useFonts from "@/hooks/use-fonts";
 import { Button } from "../ui/button";
 import { AboutVideo } from "./about-video";
 
+// TODO: Testing deployment
+
 const About = () => {
   const { main, font, serif_font, sub, sub_cap } = useFonts();
-
   const [about, setAbout] = useState<"RKMVERI" | "PERCEPTRON">("PERCEPTRON");
 
   const aboutRKMVERI = () => {
