@@ -302,7 +302,7 @@ export const eventsConfig: EventItem[] = [
   {
     title: "Beyond the lines",
     description: "Creative Writing",
-    imageURL: "/images/beyond_the_lines.jpg",
+    imageURL: "/images/beyond_the_lines.png",
     prize: "₹ 4K",
     content: () => {
       return (
