@@ -1,6 +1,7 @@
 "use client";
 
 import { CSSProperties, ReactElement, useEffect, useState } from "react";
+
 import { motion } from "framer-motion";
 
 import { cn } from "@/lib/utils";
@@ -62,7 +63,7 @@ interface SparklesTextProps {
 
 const SparklesText: React.FC<SparklesTextProps> = ({
   text,
-  colors = { first: "#9E7AFF", second: "#FE8BBB" },
+  colors = { first: "#69F791", second: "#8AEFBB" },
   className,
   sparklesCount = 10,
   ...props
@@ -94,7 +95,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
           } else {
             return { ...star, lifespan: star.lifespan - 0.1 };
           }
-        }),
+        })
       );
     };
 

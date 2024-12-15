@@ -21,7 +21,7 @@ const TeamLeads = () => {
         >
           <Badge
             variant={"secondary"}
-            className="text-lg bg-glassmorphic text-primary rounded-full group-hover:bg-background group-hover:text-foreground"
+            className="text-lg bg-glassmorphic text-background rounded-full group-hover:bg-background group-hover:text-foreground"
           >
             {member.role}
           </Badge>

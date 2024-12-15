@@ -10,7 +10,10 @@ const Team = () => {
       <Heading heading="Our Team" />
       <SparklesText className="text-background text-2xl" text="Organizers" />
       <Organizers />
-      <SparklesText className="text-background text-2xl" text="Team Leads" />
+      <SparklesText
+        className="text-background text-2xl"
+        text="Event Team Leads"
+      />
       <TeamLeads />
       <SparklesText className="text-background text-2xl" text="Designers" />
       <Designers />
