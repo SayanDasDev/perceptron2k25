@@ -3,17 +3,17 @@ import Link from "next/link";
 
 import { Github, Globe, Linkedin, Phone } from "lucide-react";
 
-import { OrganizersData } from "@/config/team";
+import { TeamLeadsData } from "@/config/team";
 import { cn } from "@/lib/utils";
 
 import { Badge } from "../ui/badge";
 import { buttonVariants } from "../ui/button";
 import { WobbleCard } from "../ui/wobble-card";
 
-const Organizers = () => {
+const TeamLeads = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4 gap-10 max-w-7xl mx-auto w-full">
-      {OrganizersData.map((member, i) => (
+      {TeamLeadsData.map((member, i) => (
         <WobbleCard
           key={i}
           containerClassName="col-span-1 group h-full bg-slate-950 h-72 w-72 "
@@ -76,4 +76,4 @@ const Organizers = () => {
   );
 };
 
-export default Organizers;
+export default TeamLeads;

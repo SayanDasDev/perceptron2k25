@@ -19,7 +19,7 @@ const FAQ = () => {
       <Accordion
         type="single"
         collapsible
-        className="max-w-[800px] w-[75vw] text-primary-foreground text-left"
+        className="max-w-[800px] w-[90vw] sm:w-[75vw] text-primary-foreground text-left"
       >
         {faqData.map((faq, i) => (
           <AccordionItem key={i} value={`item ${i}`}>

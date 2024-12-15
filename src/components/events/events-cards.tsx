@@ -83,7 +83,7 @@ export function EventsCards() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-slate-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[98%]  flex flex-col bg-slate-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -168,7 +168,7 @@ export function EventsCards() {
             onClick={() => setActive(card)}
             className="p-4 flex flex-col justify-between items-center hover:bg-slate-900 dark: rounded-xl cursor-pointer border border-background/10"
           >
-            <div className="flex gap-4 flex-col ">
+            <div className="flex gap-4 justify-center items-center flex-col ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
                   width={272}

@@ -1,45 +1,208 @@
 import { TeamItem } from "@/types/team";
 
-export const TeamData: TeamItem[] = [
+export const OrganizersData: TeamItem[] = [
+  {
+    name: "Tuhin Patra",
+    role: "Secretary",
+    avatar: "/images/Tuhin_Patra.jpg",
+    links: {
+      github: "https://github.com/TuhinPatra633",
+      linkedIn: "http://www.linkedin.com/in/tuhin-patra-226651294",
+      website: "https://tuhinpatraportfolio.netlify.app/",
+      mobile: "7439496850"
+    },
+  },
+  {
+    name: "Debayan Dutta",
+    role: "Joint Secretary",
+    avatar: "/images/debayan.jpg",
+    links: {
+      github: "https://github.com/debayan-datta",
+      linkedIn: "https://www.linkedin.com/in/dattadebayan2001",
+      // website: "https://debayan-datta.netlify.app/",
+      mobile: "6290361755",
+    },
+  },
+  {
+    name: "Anurag Joardar",
+    role: "Convenor",
+    avatar: "/images/anurag.jpg",
+    links: {
+      github: "https://github.com/Achilles1012",
+      linkedIn: "https://www.linkedin.com/in/anuragjoardar2000",
+      // website: "web",
+      mobile: "9163982515"
+    },
+  },
+  {
+    name: "Debanjan Nanda",
+    role: "Treasurer",
+    avatar: "/images/debanjan.jpg",
+    links: {
+      github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // website: "web",
+      mobile: "6291093502"
+    }
+  },
+];
+
+export const TeamLeadsData: TeamItem[] = [
+  {
+    name: "Saikat Kumar Ghosh",
+    role: "Better Call Tal Lead",
+    avatar: "/images/Saikat.jpg",
+    links: {
+      github: "https://github.com/TuhinPatra633",
+      linkedIn: "http://www.linkedin.com/in/tuhin-patra-226651294",
+      website: "https://tuhinpatraportfolio.netlify.app/",
+      mobile: "9163431542"
+    },
+  },
+  {
+    name: "Uddalak Mukherjee",
+    role: "Exquizzit Lead",
+    avatar: "/images/Uddalak.jpg",
+    links: {
+      github: "https://github.com/debayan-datta",
+      linkedIn: "https://www.linkedin.com/in/dattadebayan2001",
+      // website: "https://debayan-datta.netlify.app/",
+      mobile: "6290361755",
+    },
+  },
+  {
+    name: "Ayan Maity",
+    role: "Deep Think Lead",
+    avatar: "/images/Ayan_maity.jpg",
+    links: {
+      github: "https://github.com/Achilles1012",
+      linkedIn: "https://www.linkedin.com/in/anuragjoardar2000",
+      // website: "web",
+      mobile: "9163982515"
+    },
+  },
+  {
+    name: "Biswajit Rana",
+    role: "The Turing Show Lead",
+    avatar: "/images/biswajit.jpg",
+    links: {
+      github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // website: "web",
+      mobile: "6291093502"
+    }
+  },
+  {
+    name: "Amit Bera",
+    role: "Clash of Wheels Lead",
+    avatar: "/images/Amit_Bera.jpg",
+    links: {
+      github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // website: "web",
+      mobile: "6291093502"
+    }
+  },
+  {
+    name: "Atanu Saha",
+    role: "Enigma Equation Lead",
+    avatar: "/images/Atanu.jpg",
+    links: {
+      github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // website: "web",
+      mobile: "6291093502"
+    }
+  },
+  {
+    name: "Diptesh Saha",
+    role: "Under the Hammer Lead",
+    avatar: "/images/Diptesh.jpg",
+    links: {
+      github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // website: "web",
+      mobile: "6291093502"
+    }
+  },
+  {
+    name: "Aniket Ghosh",
+    role: "Beyond the Lens Lead",
+    avatar: "/images/Aniket.jpg",
+    links: {
+      github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // website: "web",
+      mobile: "6291093502"
+    }
+  },
+  {
+    name: "Samapan Kar",
+    role: "Lens and Light Lead",
+    avatar: "/images/Samapan_Kar.jpg",
+    links: {
+      github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // website: "web",
+      mobile: "6291093502"
+    }
+  },
+];
+
+export const DesignersData: TeamItem[] = [
+  {
+    name: "Sayan Das",
+    role: "Web Developer",
+    avatar: "/images/sayan_das.jpg",
+    links: {
+      github: "https://github.com/SayanDasDev",
+      linkedIn: "https://www.linkedin.com/in/das-sayan/",
+      website: "https://sayandas.co.in",
+      mobile: "7384802278"
+    },
+  },
   {
     name: "Ayantanu Laha",
-    role: "Web Developer",
-    avatar: "https://media.licdn.com/dms/image/v2/C5603AQGHj9uU6xEHNw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1631021827632?e=2147483647&v=beta&t=TphAKj-pASXP3X4yj5l_eaBMfyfBsydEg6hV_G8PLo8",
+    role: "Design Team Lead",
+    avatar: "/images/Ayantanu.jpg",
     links: {
-      github: "github",
-      linkedIn: "Linkedin",
-      website: "web",
-      mobile: "1234567890"
+      github: "https://github.com/Ayantanu2002",
+      linkedIn: "https://www.linkedin.com/in/ayantanu-laha-2002/",
+      website: "https://ayantanu2002.github.io/resume/index.html",
+      mobile: "9476169407",
+    },
+  },
+  {
+    name: "Pankaj Sadukha",
+    role: "Designer",
+    avatar: "/images/pankaj.jpg",
+    links: {
+      github: "https://github.com/Achilles1012",
+      linkedIn: "https://www.linkedin.com/in/anuragjoardar2000",
+      // website: "web",
+      mobile: "9163982515"
     },
   },
   {
     name: "Rajashi Saha",
-    role: "Web Developer",
-    avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    role: "Designer",
+    avatar: "/images/Rajarshi.jpg",
     links: {
-      github: "github",
-      linkedIn: "Linkedin",
-      mobile: "1234567890",
-    },
+      github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // website: "web",
+      mobile: "6291093502"
+    }
   },
   {
-    name: "Tuhin Pata",
-    role: "Web Developer",
-    avatar: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-55958-614810.jpg&fm=jpg",
+    name: "Niladri Ghosh",
+    role: "Videographer",
+    avatar: "/images/Nilardi.jpg",
     links: {
-      github: "github",
-      website: "web",
-      mobile: "1234567890"
-    },
-  },
-  {
-    name: "Sayan Das",
-    role: "Web Developer",
-    avatar: "https://avatars.githubusercontent.com/u/91375719?v=4",
-    links: {
-      github: "github",
-      linkedIn: "Linkedin",
-      website: "web"
+      github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // website: "web",
+      mobile: "6291093502"
     }
   },
 ];

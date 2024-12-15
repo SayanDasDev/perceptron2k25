@@ -8,7 +8,7 @@ import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Github, Globe, Linkedin } from "lucide-react";
 
-import { TeamData } from "@/config/team";
+import { DesignersData } from "@/config/team";
 import { cn } from "@/lib/utils";
 
 import { Badge } from "../ui/badge";
@@ -18,20 +18,24 @@ export const Designers = ({ autoplay = true }: { autoplay?: boolean }) => {
   const [active, setActive] = useState(0);
 
   const handleNext = () => {
-    setActive((prev) => (prev + 1) % TeamData.length);
+    setActive((prev) => (prev + 1) % DesignersData.length);
   };
 
   const handlePrev = () => {
-    setActive((prev) => (prev - 1 + TeamData.length) % TeamData.length);
+    setActive(
+      (prev) => (prev - 1 + DesignersData.length) % DesignersData.length
+    );
   };
 
   const isActive = (index: number) => {
     return index === active;
   };
 
+  // TODO: Timer should stop once the user starts to navigate
+
   useEffect(() => {
     if (autoplay) {
-      const interval = setInterval(handleNext, 2000);
+      const interval = setInterval(handleNext, 5000);
       return () => clearInterval(interval);
     }
   }, [autoplay]);
@@ -45,7 +49,7 @@ export const Designers = ({ autoplay = true }: { autoplay?: boolean }) => {
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
-              {TeamData.map((testimonial, index) => (
+              {DesignersData.map((testimonial, index) => (
                 <motion.div
                   key={testimonial.avatar}
                   initial={{
@@ -59,7 +63,9 @@ export const Designers = ({ autoplay = true }: { autoplay?: boolean }) => {
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
                     rotate: isActive(index) ? 0 : randomRotateY(),
-                    zIndex: isActive(index) ? 999 : TeamData.length + 2 - index,
+                    zIndex: isActive(index)
+                      ? 999
+                      : DesignersData.length + 2 - index,
                     y: isActive(index) ? [0, -80, 0] : 0,
                   }}
                   exit={{
@@ -109,15 +115,15 @@ export const Designers = ({ autoplay = true }: { autoplay?: boolean }) => {
           >
             <Badge
               variant={"secondary"}
-              className="text-sm rounded-full text-foreground"
+              className="text-sm rounded-full mb-2 text-foreground"
             >
-              {TeamData[active].role}
+              {DesignersData[active].role}
             </Badge>
             <h3 className="text-3xl font-bold text-background">
-              {TeamData[active].name}
+              {DesignersData[active].name}
             </h3>
             <motion.p className="text-lg w-80 text-gray-500 mt-8 dark:text-neutral-300">
-              {Object.entries(TeamData[active].links || {}).map(
+              {Object.entries(DesignersData[active].links || {}).map(
                 ([social, link], index) => (
                   <motion.span
                     key={index}

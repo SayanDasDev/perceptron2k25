@@ -4,6 +4,9 @@ export const RegistrationFromURL = "https://zfrmz.in/GKJwgL5mW6QU04vo2zho";
 export const BrochureURL = "https://zfrmz.in/GKJwgL5mW6QU04vo2zho";
 
 export const eventsConfig: EventItem[] = [
+  // TODO: Give proper Event Descriptions
+  // TODO: Event model should be enlarged
+
   {
     title: "Quiz",
     description:
