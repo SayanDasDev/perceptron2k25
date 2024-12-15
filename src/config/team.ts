@@ -20,7 +20,7 @@ export const OrganizersData: TeamItem[] = [
       github: "https://github.com/debayan-datta",
       linkedIn: "https://www.linkedin.com/in/dattadebayan2001",
       // website: "https://debayan-datta.netlify.app/",
-      mobile: "6290361755",
+      mobile: "9051532999",
     },
   },
   {
@@ -31,7 +31,7 @@ export const OrganizersData: TeamItem[] = [
       github: "https://github.com/Achilles1012",
       linkedIn: "https://www.linkedin.com/in/anuragjoardar2000",
       // website: "web",
-      mobile: "9163982515"
+      mobile: "9330205208"
     },
   },
   {
@@ -42,7 +42,7 @@ export const OrganizersData: TeamItem[] = [
       github: "https://github.com/DebanjanNanda",
       linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
       // website: "web",
-      mobile: "6291093502"
+      mobile: "8116404139"
     }
   },
 ];
@@ -191,7 +191,7 @@ export const DesignersData: TeamItem[] = [
       github: "https://github.com/Rsaha-16",
       linkedIn: "https://www.linkedin.com/in/rajarshi16",
       website: "https://rsaha-16.github.io/My-Portfolio/",
-      mobile: "6291093502"
+      mobile: "7679568191"
     }
   },
   {
