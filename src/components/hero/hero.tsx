@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 
 import useFonts from "@/hooks/use-fonts";
 
+import { BrochureURL } from "@/config/events";
+
 import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 const Hero = () => {
@@ -72,7 +74,7 @@ const Hero = () => {
           <HoverBorderGradient
             containerClassName="rounded-full xl:translate-y-[-150%] cursor-pointer z-[100] !bg-glassmorphic`"
             as="button"
-            // onClick={() => }
+            onClick={() => window.open(BrochureURL, "_blank")}
             className={`${sub.className} cursor-pointer z-[100] bg-glassmorphic text-2xl px-8`}
           >
             <span>Brochure</span>

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import Script from "next/script";
 
+import { ThemeProvider } from "@/components/theme-provider";
+
 import { siteConfig } from "@/config/site";
 
 import "./globals.css";
@@ -85,7 +87,16 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${font.className} no-scrollbar `}>{children}</body>
+      <body className={`${font.className} no-scrollbar bg-slate-950`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+        {/* <BgPattern /> */}
+      </body>
     </html>
   );
 }

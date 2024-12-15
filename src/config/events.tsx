@@ -3,7 +3,7 @@ import EventRulesList from "@/components/events/rules-list";
 import { EventItem } from "@/types/events";
 
 export const RegistrationFromURL = "https://zfrmz.in/GKJwgL5mW6QU04vo2zho";
-export const BrochureURL = "https://zfrmz.in/GKJwgL5mW6QU04vo2zho";
+export const BrochureURL = "https://www.sayandas.co.in/resume.pdf";
 
 export const eventsConfig: EventItem[] = [
   {
@@ -241,6 +241,65 @@ export const eventsConfig: EventItem[] = [
     },
   },
   {
+    title: "Under the Hammer",
+    description: "Auction",
+    imageURL: "/images/auction.png",
+    prize: "₹ 6K",
+    content: () => {
+      return (
+        <EventRulesList
+          rules={[
+            <div>
+              Your goal is to{" "}
+              <span className="font-semibold text-primary">
+                build a cricket squad
+              </span>{" "}
+              through auction.
+            </div>,
+            <div>
+              Teams of{" "}
+              <span className="font-semibold text-primary">2-3 members</span>{" "}
+              must register with an owner and will receive a unique
+              identification number. Spot registration is allowed.
+            </div>,
+            <div>
+              The event consists of two rounds: a prelims round (general
+              knowledge quiz) and a finals auction round where teams build a
+              squad of{" "}
+              <span className="font-semibold text-primary">15 players</span>{" "}
+              within a budget of{" "}
+              <span className="font-semibold text-primary">90 crores</span>.
+            </div>,
+            <div>
+              Teams bid on players with specific bidding increments based on
+              price ranges. Teams must adhere to squad composition rules,
+              including a maximum of{" "}
+              <span className="font-semibold text-primary">
+                7 non-Indian players
+              </span>{" "}
+              and specific player roles.
+            </div>,
+            <div>
+              Teams are evaluated based on their playing 11, with points awarded
+              for captains and wicket-keepers from a predefined list.
+              Tiebreakers include reserve player points and remaining budget.
+            </div>,
+            <div>
+              Teams will be disqualified for failing to meet squad criteria,
+              running out of budget, or engaging in unfair practices during
+              prelims.
+            </div>,
+            <div>
+              Teams must arrive on time, cannot communicate during the event,
+              and must consult the auctioneer for rule clarifications before the
+              auction begins.
+            </div>,
+          ]}
+        />
+      );
+    },
+  },
+  {
     title: "Beyond the lines",
     description: "Creative Writing",
     imageURL: "/images/beyond_the_lines.jpg",
@@ -309,65 +368,6 @@ export const eventsConfig: EventItem[] = [
             <div>
               Basic editing and colour grading is allowed. Participants have to
               submit both of the raw and edited pictures.
-            </div>,
-          ]}
-        />
-      );
-    },
-  },
-  {
-    title: "Under the Hammer",
-    description: "Auction",
-    imageURL: "/images/auction.png",
-    prize: "₹ 6K",
-    content: () => {
-      return (
-        <EventRulesList
-          rules={[
-            <div>
-              Your goal is to{" "}
-              <span className="font-semibold text-primary">
-                build a cricket squad
-              </span>{" "}
-              through auction.
-            </div>,
-            <div>
-              Teams of{" "}
-              <span className="font-semibold text-primary">2-3 members</span>{" "}
-              must register with an owner and will receive a unique
-              identification number. Spot registration is allowed.
-            </div>,
-            <div>
-              The event consists of two rounds: a prelims round (general
-              knowledge quiz) and a finals auction round where teams build a
-              squad of{" "}
-              <span className="font-semibold text-primary">15 players</span>{" "}
-              within a budget of{" "}
-              <span className="font-semibold text-primary">90 crores</span>.
-            </div>,
-            <div>
-              Teams bid on players with specific bidding increments based on
-              price ranges. Teams must adhere to squad composition rules,
-              including a maximum of{" "}
-              <span className="font-semibold text-primary">
-                7 non-Indian players
-              </span>{" "}
-              and specific player roles.
-            </div>,
-            <div>
-              Teams are evaluated based on their playing 11, with points awarded
-              for captains and wicket-keepers from a predefined list.
-              Tiebreakers include reserve player points and remaining budget.
-            </div>,
-            <div>
-              Teams will be disqualified for failing to meet squad criteria,
-              running out of budget, or engaging in unfair practices during
-              prelims.
-            </div>,
-            <div>
-              Teams must arrive on time, cannot communicate during the event,
-              and must consult the auctioneer for rule clarifications before the
-              auction begins.
             </div>,
           ]}
         />

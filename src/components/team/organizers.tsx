@@ -29,10 +29,10 @@ const Organizers = () => {
             src={member.avatar}
             fill
             alt={""}
-            className="absolute inset-0 -z-10 object-cover rounded-2xl brightness-50 group-hover:brightness-100 ease-in-out duration-300 transition-all"
+            className="absolute inset-0 -z-10 object-cover rounded-2xl group-hover:brightness-80 brightness-80 ease-in-out duration-300 transition-all"
           />
           <div className="flex flex-col items-center justify-center space-y-4">
-            <div className="font-bold text-background text-2xl drop-shadow-md">
+            <div className="font-bold text-background text-2xl [text-shadow:_2px_5px_4px_rgb(0_0_0_/_40%)]">
               {member.name}
             </div>
             <div className="flex gap-4 justify-around ">

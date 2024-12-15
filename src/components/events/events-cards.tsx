@@ -125,6 +125,7 @@ export function EventsCards() {
                     <div className="pr-2 h-full relative">
                       <Link
                         href={BrochureURL}
+                        target="_blank"
                         className={cn(
                           buttonVariants({ variant: "ghost" }),
                           "rounded-full border bg-transparent h-[44px]"
