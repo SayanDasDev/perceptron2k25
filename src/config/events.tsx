@@ -3,7 +3,7 @@ import EventRulesList from "@/components/events/rules-list";
 import { EventItem } from "@/types/events";
 
 export const RegistrationFromURL = "https://zfrmz.in/GKJwgL5mW6QU04vo2zho";
-export const BrochureURL = "https://www.sayandas.co.in/resume.pdf";
+export const BrochureURL = "/brochure.pdf";
 
 export const eventsConfig: EventItem[] = [
   {
