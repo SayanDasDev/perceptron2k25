@@ -38,6 +38,7 @@ const Designers = () => {
             <div className="flex gap-4 justify-around ">
               {member.links?.github && (
                 <Link
+                  target="_blank"
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
                   href={member.links?.github}
                 >
@@ -46,6 +47,7 @@ const Designers = () => {
               )}
               {member.links?.linkedIn && (
                 <Link
+                  target="_blank"
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
                   href={member.links?.linkedIn}
                 >
@@ -54,6 +56,7 @@ const Designers = () => {
               )}
               {member.links?.website && (
                 <Link
+                  target="_blank"
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
                   href={member.links?.website}
                 >
@@ -62,6 +65,7 @@ const Designers = () => {
               )}
               {member.links?.mobile && (
                 <Link
+                  target="_blank"
                   className={cn(buttonVariants({ variant: "avatarLinks" }))}
                   href={`tel:${member.links.mobile}`}
                 >

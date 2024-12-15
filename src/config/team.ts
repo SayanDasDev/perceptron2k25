@@ -53,10 +53,10 @@ export const TeamLeadsData: TeamItem[] = [
     role: "Better Call Tal Lead",
     avatar: "/images/Saikat.jpg",
     links: {
-      github: "https://github.com/TuhinPatra633",
-      linkedIn: "http://www.linkedin.com/in/tuhin-patra-226651294",
-      website: "https://tuhinpatraportfolio.netlify.app/",
-      mobile: "9163431542"
+      github: "https://github.com/ghoshsaikat2024",
+      linkedIn: "https://linkedin.com/in/saikat-ghosh-0340551ba",
+      // website: "https://tuhinpatraportfolio.netlify.app/",
+      mobile: "7604037062"
     },
   },
   {
@@ -64,10 +64,10 @@ export const TeamLeadsData: TeamItem[] = [
     role: "Exquizzit Lead",
     avatar: "/images/Uddalak.jpg",
     links: {
-      github: "https://github.com/debayan-datta",
-      linkedIn: "https://www.linkedin.com/in/dattadebayan2001",
+      github: "https://github.com/Jacknife49",
+      linkedIn: "https://www.linkedin.com/in/uddalak-mukherjee-38950321b",
       // website: "https://debayan-datta.netlify.app/",
-      mobile: "6290361755",
+      mobile: "8910901931",
     },
   },
   {
@@ -75,10 +75,10 @@ export const TeamLeadsData: TeamItem[] = [
     role: "Deep Think Lead",
     avatar: "/images/Ayan_maity.jpg",
     links: {
-      github: "https://github.com/Achilles1012",
-      linkedIn: "https://www.linkedin.com/in/anuragjoardar2000",
-      // website: "web",
-      mobile: "9163982515"
+      github: "https://github.com/AyanMaity435601",
+      linkedIn: "https://www.linkedin.com/in/ayan--maity",
+      website: "https://ayanmaity435601.github.io/",
+      mobile: "7864827874"
     },
   },
   {
@@ -86,10 +86,10 @@ export const TeamLeadsData: TeamItem[] = [
     role: "The Turing Show Lead",
     avatar: "/images/biswajit.jpg",
     links: {
-      github: "https://github.com/DebanjanNanda",
-      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
-      // website: "web",
-      mobile: "6291093502"
+      github: "github.com/biswajit-github-2022",
+      linkedIn: "https://www.linkedin.com/in/biswajit-rana/",
+      website: "https://biswajit-github-2022.github.io/portfolio_website/",
+      mobile: "7908105640"
     }
   },
   {
@@ -97,10 +97,10 @@ export const TeamLeadsData: TeamItem[] = [
     role: "Clash of Wheels Lead",
     avatar: "/images/Amit_Bera.jpg",
     links: {
-      github: "https://github.com/DebanjanNanda",
-      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
-      // website: "web",
-      mobile: "6291093502"
+      github: "https://github.com/AmitBera007/",
+      linkedIn: "https://www.linkedin.com/in/amit-bera/",
+      website: "https://amitbera007.github.io/portfolio/",
+      mobile: "7047884078"
     }
   },
   {
@@ -108,10 +108,10 @@ export const TeamLeadsData: TeamItem[] = [
     role: "Enigma Equation Lead",
     avatar: "/images/Atanu.jpg",
     links: {
-      github: "https://github.com/DebanjanNanda",
-      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // github: "https://www.linkedin.com/in/debanjan-nanda",
+      linkedIn: "https://www.linkedin.com/in/atanu-saha-4aa183210",
       // website: "web",
-      mobile: "6291093502"
+      mobile: "9123869488"
     }
   },
   {
@@ -119,10 +119,10 @@ export const TeamLeadsData: TeamItem[] = [
     role: "Under the Hammer Lead",
     avatar: "/images/Diptesh.jpg",
     links: {
-      github: "https://github.com/DebanjanNanda",
-      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/diptesh-saha-634349254",
       // website: "web",
-      mobile: "6291093502"
+      mobile: "9330404502"
     }
   },
   {
@@ -130,10 +130,10 @@ export const TeamLeadsData: TeamItem[] = [
     role: "Beyond the Lens Lead",
     avatar: "/images/Aniket.jpg",
     links: {
-      github: "https://github.com/DebanjanNanda",
-      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      github: "https://github.com/Nik-from-H",
+      // linkedIn: "https://www.linkedin.com/in/diptesh-saha-634349254",
       // website: "web",
-      mobile: "6291093502"
+      mobile: "8145068846"
     }
   },
   {
@@ -141,10 +141,10 @@ export const TeamLeadsData: TeamItem[] = [
     role: "Lens and Light Lead",
     avatar: "/images/Samapan_Kar.jpg",
     links: {
-      github: "https://github.com/DebanjanNanda",
-      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      github: "https://github.com/sama7fb",
+      linkedIn: "https://www.linkedin.com/in/samapankar",
       // website: "web",
-      mobile: "6291093502"
+      mobile: "9062593526"
     }
   },
 ];
@@ -177,10 +177,10 @@ export const DesignersData: TeamItem[] = [
     role: "Designer",
     avatar: "/images/pankaj.jpg",
     links: {
-      github: "https://github.com/Achilles1012",
-      linkedIn: "https://www.linkedin.com/in/anuragjoardar2000",
-      // website: "web",
-      mobile: "9163982515"
+      github: "https://github.com/PANKAJ-SADHUKHAN",
+      linkedIn: "https://www.linkedin.com/in/pankaj-sadhukhan",
+      website: "https://pankaj-sadhukhan.github.io/",
+      mobile: "9339447515"
     },
   },
   {
@@ -188,9 +188,9 @@ export const DesignersData: TeamItem[] = [
     role: "Designer",
     avatar: "/images/Rajarshi.jpg",
     links: {
-      github: "https://github.com/DebanjanNanda",
-      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
-      // website: "web",
+      github: "https://github.com/Rsaha-16",
+      linkedIn: "https://www.linkedin.com/in/rajarshi16",
+      website: "https://rsaha-16.github.io/My-Portfolio/",
       mobile: "6291093502"
     }
   },
@@ -199,10 +199,10 @@ export const DesignersData: TeamItem[] = [
     role: "Videographer",
     avatar: "/images/Nilardi.jpg",
     links: {
-      github: "https://github.com/DebanjanNanda",
-      linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
+      // github: "https://github.com/DebanjanNanda",
+      linkedIn: "https://www.linkedin.com/in/niladri-ghosh-3aa76b320",
       // website: "web",
-      mobile: "6291093502"
+      mobile: "9093372699"
     }
   },
 ];

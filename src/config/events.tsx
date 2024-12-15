@@ -93,8 +93,8 @@ export const eventsConfig: EventItem[] = [
     },
   },
   {
-    title: "AI Hackathon",
-    description: "",
+    title: "Deep Think",
+    description: "AI Hackathon",
     imageURL: "/images/hackathon.png",
     prize: "6K",
     content: () => {
@@ -149,14 +149,20 @@ export const eventsConfig: EventItem[] = [
     },
   },
   {
-    title: "Gaming",
-    description: "",
+    title: "Clash of Wheels",
+    description: "Gaming Competition",
     imageURL: "/images/gaming.png",
     prize: "6K",
     content: () => {
       return (
         <EventRulesList
           rules={[
+            <div>
+              Play{" "}
+              <span className="font-semibold text-primary">Smash Karts</span>, a
+              fast-paced, multiplayer online kart racing and battle royale game
+              that combines high-speed driving with explosive combat.
+            </div>,
             <div>
               Open to all. No prior gaming experience is required—everyone is
               encouraged to join and have fun!
@@ -185,14 +191,18 @@ export const eventsConfig: EventItem[] = [
     },
   },
   {
-    title: "Puzzle",
-    description: "",
+    title: "Enigma Equation",
+    description: "Puzzle Solving Competition",
     imageURL: "/images/puzzle.jpg",
     prize: "6K",
     content: () => {
       return (
         <EventRulesList
           rules={[
+            <div>
+              In this event you have to go through rounds by solving mind
+              bending puzzles. The highest scorer wins.
+            </div>,
             <div>
               <span className="font-semibold text-primary">Round 1:</span> 15
               MCQs.
@@ -279,8 +289,8 @@ export const eventsConfig: EventItem[] = [
     },
   },
   {
-    title: "Photography",
-    description: "",
+    title: "Lens and Light",
+    description: "Photography Competition",
     imageURL: "/images/photography.png",
     prize: "4K",
     content: () => {
@@ -306,14 +316,21 @@ export const eventsConfig: EventItem[] = [
     },
   },
   {
-    title: "Auction",
-    description: "",
+    title: "Under the Hammer",
+    description: "Auction",
     imageURL: "/images/auction.png",
     prize: "6K",
     content: () => {
       return (
         <EventRulesList
           rules={[
+            <div>
+              Your goal is to{" "}
+              <span className="font-semibold text-primary">
+                build a cricket squad
+              </span>{" "}
+              through auction.
+            </div>,
             <div>
               Teams of{" "}
               <span className="font-semibold text-primary">2-3 members</span>{" "}

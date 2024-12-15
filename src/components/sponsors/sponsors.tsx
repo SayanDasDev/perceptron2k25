@@ -26,6 +26,12 @@ const Sponsors = () => {
                   className="h-40 w-full object-contain rounded-xl group-hover/card:shadow-xl"
                 />
               </CardItem>
+              <CardItem
+                translateZ="100"
+                className="w-full mt-4 text-center text-background text-xl font-bold"
+              >
+                {sponsor.title}
+              </CardItem>
               <div className="grid grid-cols-3 flex-wrap gap-2 mt-10">
                 {Object.entries(sponsor.links || {}).map(
                   ([social, link], index) => (

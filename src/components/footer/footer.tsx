@@ -33,7 +33,7 @@ const Footer = () => {
               <li>Friday and Saturday: 9:30am - 5:30pm</li>
             </ul>
 
-            <ul className="mt-8 flex gap-6">
+            <ul className="mt-8 flex gap-6 mb-2">
               {Object.entries(siteConfig.links).map(([key, value], i) => (
                 <li key={i}>
                   <a
@@ -52,7 +52,7 @@ const Footer = () => {
             {siteConfig.phone.map((phone, i) => (
               <div
                 key={i}
-                className="flex text-background/70 hover:text-background mt-4"
+                className="flex text-background/70 hover:text-background"
               >
                 <div className="ml-2 flex flex-col justify-center gap-2 ">
                   <div className="flex flex items-center gap-2">

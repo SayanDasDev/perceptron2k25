@@ -10,11 +10,62 @@ const About = () => {
 
   const [about, setAbout] = useState<"RKMVERI" | "PERCEPTRON">("PERCEPTRON");
 
-  const aboutRKMVERI =
-    "Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) is a Deemed-to-be-University as declared by Govt. of India under Section 3 of UGC Act, 1956. The Institute is inspired by the teachings of Swami Vivekananda who believed that education is the manifestation of perfection already. The Institute is a leading educational institution in the country with a strong commitment to excellence in education and research. The Institute offers a wide range of programs in the field of arts, science, engineering, management, and law. The Institute is known for its high-quality education, research, and innovation. The Institute is committed to providing a conducive environment for the holistic development of students and faculty. The Institute is dedicated to the promotion of knowledge, wisdom, and service to society.";
+  const aboutRKMVERI = () => {
+    return (
+      <div className="space-y-4">
+        <div>
+          Ramakrishna Mission Vivekananda Educational and Research Institute
+          (RKMVERI) is a recognized Deemed-to-be-University,overseen by the
+          Ramakrishna Mission – a charitable, philanthropic, and spiritual
+          organization with over more than 200 branches worldwide. Government of
+          India declared RKMVERI, through a Gazetted Notification dated 5
+          January 2005, as a de novo Deemed-to-be-University under Section 3 of
+          UGC Act, 1956.
+        </div>
+        <div>
+          The Institute is a leading educational institution in the country with
+          a strong commitment to excellence in education and research offering a
+          wide range of programs in the field of Arts, Science, Indian Heritage
+          and more. Over a century ago, Swami Vivekananda, a leader in India's
+          modernization and a Vedanta philosopher, emphasized education as a
+          holistic process that builds character and integrates both Eastern
+          spiritual wisdom and Western scientific knowledge. He supported
+          educational initiatives and inspired figures like Jamshedji Tata,
+          founder of the Indian Institute of Science. RKMVERI continues this
+          legacy by focusing on character development, intellectual growth, and
+          fostering a culture of innovation and service to society.
+        </div>
+      </div>
+    );
+  };
 
-  const aboutPERCEPTRON =
-    "PERCEPTRON is the annual technical fest of the Department of Computer Science, Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI). The fest is organized by the students and faculty of the Department of Computer Science. The fest aims to provide a platform for students to showcase their technical skills, creativity, and innovation. The fest includes a wide range of events such as coding competitions, hackathons, workshops, seminars, and talks by industry experts. The fest also includes cultural events, sports events, and fun activities. The fest is open to students from all over the country. The fest is a great opportunity for students to learn, explore, and network with like-minded individuals. The fest is a celebration of technology, creativity, and innovation.";
+  const aboutPERCEPTRON = () => {
+    return (
+      <div className="space-y-4">
+        <div>
+          Welcome to the 3rd installation of Perceptron, the flagship technical
+          fest organized by the Department of Computer Science at Ramakrishna
+          Mission Vivekananda Educational and Research Institute, Belur.
+        </div>
+        <div>
+          This year, Perceptron 2025 is a two-day extravaganza packed with
+          exciting events, ranging from coding challenges and chess tournaments
+          to quizzes, gaming competitions, and much more. For those eager to
+          dive into the latest trends in Artificial Intelligence and technology,
+          we have curated insightful seminars and thrilling hackathons that will
+          inspire and ignite innovation.
+        </div>
+        <div>
+          Be a part of this dynamic journey where technology meets talent, and
+          ideas turn into reality. Perceptron 2025 isn’t just an event – it’s a
+          movement to push boundaries, ignite passion, and celebrate the spirit
+          of innovation. Whether you're here to compete, learn, or simply
+          explore, there’s something for everyone. Let’s come together to create
+          moments that inspire and memories that last a lifetime!
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div
@@ -40,11 +91,11 @@ const About = () => {
               <div className="flex gap-4">
                 <div className="w-[5%] max-sm:hidden rounded-md mt-[18px] h-[3px] bg-primary"></div>
                 <div className="flex flex-1 justify-center items-center">
-                  <p
+                  <div
                     className={`${serif_font.className} text-ellipsis font-size-sm text-justify sm:leading-10 overflow-hidden text-slate-300`}
                   >
-                    {about == "RKMVERI" ? aboutRKMVERI : aboutPERCEPTRON}
-                  </p>
+                    {about == "RKMVERI" ? aboutRKMVERI() : aboutPERCEPTRON()}
+                  </div>
                 </div>
               </div>
               <Button

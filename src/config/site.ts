@@ -3,7 +3,7 @@ export const siteConfig = {
   url: "https://cs.rkmvu.ac.in/perceptron25",
   ogImage: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/development/src/app/opengraph-image.png",
   description:
-    "Annual Techfest at Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) 2025",
+    "Annual Tech-fest at Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) 2025",
   links: {
     facebook: "https://www.facebook.com/perceptron.rkmveri",
     instagram: "https://www.instagram.com/perceptron_2025",
