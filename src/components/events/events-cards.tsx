@@ -83,7 +83,7 @@ export function EventsCards() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full md:w-[90vw] h-screen md:h-[95vh] pb-12 md:max-w-[1000px] md:max-h-[720px] border border-background/10 flex flex-col md:grid grid-cols-3 grid-rows-[clamp(40vh_300px_10vh)_1fr] md:gap-4 bg-slate-900 sm:rounded-3xl overflow-hidden"
+              className="w-full md:w-[90vw] h-screen md:h-[95vh] pb-8 md:max-w-[1000px] md:max-h-[720px] border border-background/10 flex flex-col md:grid grid-cols-3 grid-rows-[clamp(40vh_300px_10vh)_1fr] md:gap-4 bg-slate-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -144,16 +144,16 @@ export function EventsCards() {
                   </div>
                 </div>
               </div>
-              <div className="pt-4 relative px-4 col-span-3">
-                <p className="text-2xl font-bold text-background/80 mb-4">
-                  Rules and Guidelines
-                </p>
+              <p className="text-2xl font-bold text-background/80 pl-6">
+                Rules and Guidelines
+              </p>
+              <div className="relative px-4 col-span-3 overflow-y-scroll no-scrollbar [mask:linear-gradient(to_bottom,white,white,white,white,transparent)]">
                 <motion.div
                   layout
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="text-background/75 h-[320px] overflow-y-scroll text-xs md:text-sm lg:text-base pb-10 flex flex-col items-start gap-4 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                  className="text-background/75 overflow-y-scroll text-xs md:text-sm lg:text-base pb-10 flex flex-col items-start gap-4 [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                 >
                   {typeof active.content === "function"
                     ? active.content()
@@ -170,7 +170,7 @@ export function EventsCards() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col justify-between items-center hover:bg-slate-900 dark: rounded-xl cursor-pointer border border-background/10"
+            className="p-4 flex flex-col justify-between items-center hover:bg-slate-900 dark: rounded-xl cursor-pointer md:border border-background/10"
           >
             <div className="flex gap-4 justify-center items-center flex-col ">
               <motion.div layoutId={`image-${card.title}-${id}`}>

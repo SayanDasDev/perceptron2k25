@@ -16,18 +16,20 @@ export const eventsConfig: EventItem[] = [
         <EventRulesList
           rules={[
             <div>
-              An <b>Under 25</b> Quiz open to all students of colleges and
-              universities.
+              An <span className="font-semibold text-primary">Under 25</span>{" "}
+              Quiz open to all students of colleges and universities.
             </div>,
             <div>
-              Each Team can have a maximum of <b>3 members</b>. Duos and Lone
-              wolves are also welcome.
+              Each Team can have a maximum of{" "}
+              <span className="font-semibold text-primary">3 members</span>.
+              Duos and Lone wolves are also welcome.
             </div>,
             <div>Cross College Teams are welcome.</div>,
             <div>There can be multiple teams from one Institute.</div>,
             <div>The Quiz will be divided into Prelims and Finals.</div>,
             <div>
-              There will be 26 questions in the prelims in <b>A – Z</b> format.
+              There will be 26 questions in the prelims in{" "}
+              <span className="font-semibold text-primary">A – Z</span> format.
             </div>,
             <div>Top 8 teams qualify to the finals.</div>,
           ]}
@@ -45,36 +47,45 @@ export const eventsConfig: EventItem[] = [
         <EventRulesList
           rules={[
             <div>
-              <b>Tournament Format:</b> Preliminary rounds (Swiss style) will be
-              played on a virtual board via Lichess.org or Chess.com, followed
-              by offline board knockout rounds for the top 8 players.
+              <span className="font-semibold text-primary">
+                Tournament Format:
+              </span>{" "}
+              Preliminary rounds (Swiss style) will be played on a virtual board
+              via Lichess.org or Chess.com, followed by offline board knockout
+              rounds for the top 8 players.
             </div>,
             <div>
-              <b>Time Control:</b> 5 minutes per player for preliminary and
-              quarterfinal rounds; 10 minutes for semifinals and finals.
+              <span className="font-semibold text-primary">Time Control:</span>{" "}
+              5 minutes per player for preliminary and quarterfinal rounds; 10
+              minutes for semifinals and finals.
             </div>,
             <div>
-              <b>Platform Requirement:</b> Preliminary rounds will be played on
-              Lichess.org or Chess.com. Once the platform is finalized,
-              participants will be notified via WhatsApp or Google Group, after
-              which they must create an account and share their username.
+              <span className="font-semibold text-primary">
+                Platform Requirement:
+              </span>{" "}
+              Preliminary rounds will be played on Lichess.org or Chess.com.
+              Once the platform is finalized, participants will be notified via
+              WhatsApp or Google Group, after which they must create an account
+              and share their username.
             </div>,
             <div>
-              <b>Fair Play & Rules:</b> Standard chess rules apply. Violations
-              of fair play will result in disqualification. Tournament arbiter's
-              decisions will be final.
+              <span className="font-semibold text-primary">
+                Fair Play & Rules:
+              </span>{" "}
+              Standard chess rules apply. Violations of fair play will result in
+              disqualification. Tournament arbiter's decisions will be final.
             </div>,
             <div>
-              <b>Tie-Breakers:</b> Tie-breakers (if needed) will follow the
-              Buchholz system or platform-provided methods during preliminary
-              rounds.
+              <span className="font-semibold text-primary">Tie-Breakers:</span>{" "}
+              Tie-breakers (if needed) will follow the Buchholz system or
+              platform-provided methods during preliminary rounds.
             </div>,
             <div>
-              Note: All participants must be physically present at Ramakrishna
-              Mission Vivekananda Educational and Research Institute for the
-              entire tournament. Further platform-related updates will be shared
-              with registered participants via WhatsApp or Google Group once
-              finalized.
+              <i>Note:</i> All participants must be physically present at
+              Ramakrishna Mission Vivekananda Educational and Research Institute
+              for the entire tournament. Further platform-related updates will
+              be shared with registered participants via WhatsApp or Google
+              Group once finalized.
             </div>,
           ]}
         />
@@ -92,17 +103,20 @@ export const eventsConfig: EventItem[] = [
           rules={[
             <div>
               The problem statement, case study, and dataset will be shared{" "}
-              <b>7–10 days</b> before the event.
+              <span className="font-semibold text-primary">7–10 days</span>{" "}
+              before the event.
             </div>,
             <div>
               Teams must submit their solutions, including models and
-              methodologies, <b>2 days</b> before the event. Submission details
-              will be provided in advance.
+              methodologies,{" "}
+              <span className="font-semibold text-primary">2 days</span> before
+              the event. Submission details will be provided in advance.
             </div>,
             <div>
-              Each team will have <b>10 minutes</b> to present their approach
-              and findings during the event, focusing on methodology, analysis,
-              and solution development.
+              Each team will have{" "}
+              <span className="font-semibold text-primary">10 minutes</span> to
+              present their approach and findings during the event, focusing on
+              methodology, analysis, and solution development.
             </div>,
             <div>
               Further details will be provided here soon. Please check this page
@@ -156,8 +170,9 @@ export const eventsConfig: EventItem[] = [
               must use the default controls available on their chosen device.
             </div>,
             <div>
-              Each match will last <b>8–10 minutes</b>, unless otherwise
-              specified by the event organizers.
+              Each match will last{" "}
+              <span className="font-semibold text-primary">8–10 minutes</span>,
+              unless otherwise specified by the event organizers.
             </div>,
             <div>
               All participants must adhere to fair play guidelines, using only
@@ -179,16 +194,36 @@ export const eventsConfig: EventItem[] = [
         <EventRulesList
           rules={[
             <div>
-              <b>Round 1:</b> 15 MCQs, 40 minutes. Scoring: +4 for correct, 0
-              for wrong, +1 for unanswered.
+              <span className="font-semibold text-primary">Round 1:</span> 15
+              MCQs.
+              <EventRulesList
+                className="space-y-[1px]"
+                rules={[
+                  <span>Time: 40 minutes.</span>,
+                  <span>
+                    Scoring: +4 for correct, 0 for wrong, +1 for unanswered.
+                  </span>,
+                ]}
+              />
             </div>,
             <div>
-              <b>Round 2:</b> 10 problems, 1 hour. Maximum 10 marks per
-              question.
+              <span className="font-semibold text-primary">Round 2:</span> 10
+              problems.
+              <EventRulesList
+                className="space-y-[1px]"
+                rules={[
+                  <span>Time: 1 hour</span>,
+                  <span>Scoring: Maximum 10 marks per question.</span>,
+                ]}
+              />
             </div>,
             <div>
-              <b>Qualification:</b> Top 20 from Round 1 qualify for Round 2.
-              Tiebreaker: Fewer wrong attempts in Round 1.
+              <span className="font-semibold text-primary">Qualification:</span>{" "}
+              Top 20 from Round 1 qualify for Round 2.
+            </div>,
+            <div>
+              <span className="font-semibold text-primary">Tiebreaker:</span>{" "}
+              Fewer wrong attempts in Round 1.
             </div>,
           ]}
         />
@@ -209,16 +244,25 @@ export const eventsConfig: EventItem[] = [
               registration will be available.
             </div>,
             <div>
-              Registration will close at <b>8th January 11:59 PM</b>.
+              Registration will close at{" "}
+              <span className="font-semibold text-primary">
+                8th January 11:59 PM
+              </span>
+              .
             </div>,
             <div>
-              Participants have <b>24 hours</b> to submit their writing in
-              typing in a pdf and doc format. No handwritten submission will be
-              entertained.
+              Participants have{" "}
+              <span className="font-semibold text-primary">24 hours</span> to
+              submit their writing in typing in a pdf and doc format. No
+              handwritten submission will be entertained.
             </div>,
             <div>
               The writing medium is English. Both the writing format and topics
-              will be given out through online on <b>9th January 12:00 AM</b>.
+              will be given out through online on{" "}
+              <span className="font-semibold text-primary">
+                9th January 12:00 AM
+              </span>
+              .
             </div>,
             <div>
               The specific rules for each format will be given alongside.
@@ -271,19 +315,27 @@ export const eventsConfig: EventItem[] = [
         <EventRulesList
           rules={[
             <div>
-              Teams of 2-3 members must register with an owner and will receive
-              a unique identification number. Spot registration is allowed.
+              Teams of{" "}
+              <span className="font-semibold text-primary">2-3 members</span>{" "}
+              must register with an owner and will receive a unique
+              identification number. Spot registration is allowed.
             </div>,
             <div>
               The event consists of two rounds: a prelims round (general
               knowledge quiz) and a finals auction round where teams build a
-              squad of 15 players within a budget of 90 crores.
+              squad of{" "}
+              <span className="font-semibold text-primary">15 players</span>{" "}
+              within a budget of{" "}
+              <span className="font-semibold text-primary">90 crores</span>.
             </div>,
             <div>
               Teams bid on players with specific bidding increments based on
               price ranges. Teams must adhere to squad composition rules,
-              including a maximum of 7 non-Indian players and specific player
-              roles.
+              including a maximum of{" "}
+              <span className="font-semibold text-primary">
+                7 non-Indian players
+              </span>{" "}
+              and specific player roles.
             </div>,
             <div>
               Teams are evaluated based on their playing 11, with points awarded
