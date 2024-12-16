@@ -11,6 +11,7 @@ export const eventsConfig: EventItem[] = [
     description: "Quiz Competition",
     imageURL: "/images/quiz.png",
     prize: "₹ 6K",
+    date: "11th Jan",
     content: () => {
       return (
         <EventRulesList
@@ -42,6 +43,7 @@ export const eventsConfig: EventItem[] = [
     description: "Chess Competition",
     imageURL: "/images/chess.jpg",
     prize: "₹ 6K",
+    date: "10th Jan",
     content: () => {
       return (
         <EventRulesList
@@ -105,6 +107,7 @@ export const eventsConfig: EventItem[] = [
     description: "AI Hackathon",
     imageURL: "/images/hackathon.png",
     prize: "₹ 6K",
+    date: "10th Jan",
     content: () => {
       return (
         <EventRulesList
@@ -140,6 +143,7 @@ export const eventsConfig: EventItem[] = [
     description: "Coding Competition",
     imageURL: "/images/coding.jpg",
     prize: "₹ 6K",
+    date: "11th Jan",
     content: () => {
       return (
         <EventRulesList
@@ -170,6 +174,7 @@ export const eventsConfig: EventItem[] = [
     description: "Gaming Competition",
     imageURL: "/images/gaming.png",
     prize: "₹ 6K",
+    date: "10th Jan",
     content: () => {
       return (
         <EventRulesList
@@ -212,6 +217,7 @@ export const eventsConfig: EventItem[] = [
     description: "Puzzle Solving Competition",
     imageURL: "/images/puzzle.jpg",
     prize: "₹ 6K",
+    date: "10th Jan",
     content: () => {
       return (
         <EventRulesList
@@ -262,6 +268,7 @@ export const eventsConfig: EventItem[] = [
     description: "Auction",
     imageURL: "/images/auction.png",
     prize: "₹ 6K",
+    date: "11th Jan",
     content: () => {
       return (
         <EventRulesList

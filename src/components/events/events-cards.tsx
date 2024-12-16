@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useId, useRef, useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
+import { Calendar, Trophy } from "lucide-react";
 
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
@@ -111,17 +112,33 @@ export function EventsCards() {
                     >
                       {active.description}
                     </motion.p>
-                    <div className="text-lg">
-                      Prize: &nbsp;
+                    <div className="text-lg flex flex-wrap gap-2 items-center">
+                      {/* Prize: &nbsp; */}
                       <Badge
                         variant={"secondary"}
-                        className="text-sm mt-2 rounded-full text-foreground"
+                        className="text-sm mt-2 rounded-full text-foreground flex gap-1 items-center w-fit"
                       >
+                        <Trophy
+                          className="inline-block text-foreground/70"
+                          size={16}
+                        />
                         {active.prize}
                       </Badge>
+                      {active.date && (
+                        <Badge
+                          variant={"secondary"}
+                          className="text-sm mt-2 rounded-full text-foreground flex gap-1 items-center w-fit"
+                        >
+                          <Calendar
+                            className="inline-block text-foreground/70"
+                            size={16}
+                          />
+                          {active.date}
+                        </Badge>
+                      )}
                     </div>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 flex-wrap">
                     <div className="pr-2 h-full relative">
                       <Link
                         href={BrochureURL}

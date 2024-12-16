@@ -3,6 +3,7 @@ export interface EventItem {
   description: string
   imageURL: string
   prize: string
+  date?: string
   //@ts-ignore
   content: () => JSX.Element
 }
