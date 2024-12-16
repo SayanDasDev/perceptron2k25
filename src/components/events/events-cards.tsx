@@ -35,8 +35,16 @@ export function EventsCards() {
 
     if (active && typeof active === "object") {
       document.body.style.overflow = "hidden";
+      const menuElements = document.querySelectorAll(".menu");
+      menuElements.forEach((element) => {
+        (element as HTMLElement).style.display = "none";
+      });
     } else {
       document.body.style.overflow = "auto";
+      const menuElements = document.querySelectorAll(".menu");
+      menuElements.forEach((element) => {
+        (element as HTMLElement).style.display = "block";
+      });
     }
 
     window.addEventListener("keydown", onKeyDown);

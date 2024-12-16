@@ -16,7 +16,7 @@ import { Button } from "./ui/button";
 const NavMenu = () => {
   const { sub, mono } = useFonts();
 
-  const container = useRef<HTMLDivElement | null>(null);
+  const container = useRef<HTMLMenuElement | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const tl = useRef<gsap.core.Timeline | null>(null);
@@ -60,7 +60,7 @@ const NavMenu = () => {
   };
 
   return (
-    <div className="" ref={container}>
+    <menu className="menu" ref={container}>
       <Button
         onClick={toggleMenu}
         variant={"ghostNoHover"}
@@ -89,7 +89,7 @@ const NavMenu = () => {
           </div>
         ))}
       </div>
-    </div>
+    </menu>
   );
 };
 
