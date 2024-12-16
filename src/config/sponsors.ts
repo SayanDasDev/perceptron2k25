@@ -16,7 +16,7 @@ export const sponsorData: SPONSORItem[] = [
   {
     name: "QJ",
     title: "Associate Sponsor",
-    imageURL: "/images/QJ_logo.jpg",
+    imageURL: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/QJ_logo.jpg",
     links: {
       website: "https://qjconsulting.in/",
       linkedin: "https://www.linkedin.com/company/qj-consultingofficial/",
@@ -28,7 +28,7 @@ export const sponsorData: SPONSORItem[] = [
   {
     name: "Nihilent",
     title: "Technical Sponsor",
-    imageURL: "/images/Nihilent_logo.jpg",
+    imageURL: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Nihilent_logo.jpg",
     links: {
       website: "https://www.nihilent.com/",
       linkedin: "https://www.linkedin.com/company/nihilent/",
@@ -40,7 +40,7 @@ export const sponsorData: SPONSORItem[] = [
   {
     name: "Data Space",
     title: "Technical Sponsor",
-    imageURL: "/images/data_space.png",
+    imageURL: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/data_space.png",
     links: {
       website: "https://dataspaceacademy.com/",
       linkedin: "https://www.linkedin.com/company/dataspace-academy/",
@@ -52,7 +52,7 @@ export const sponsorData: SPONSORItem[] = [
   {
     name: "HandE",
     title: "Event Sponsor",
-    imageURL: "/images/HandE_Logo.png",
+    imageURL: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/HandE_Logo.png",
     links: {
       website: "https://www.handelearning.com/",
       linkedin: "https://www.linkedin.com/company/hande-learning",

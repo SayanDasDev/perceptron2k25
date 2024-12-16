@@ -45,7 +45,14 @@ const Hero = () => {
       {videoPlaying ? (
         <BgVideo />
       ) : (
-        <Image src={"/images/hero.png"} alt="" fill objectFit="cover" />
+        <Image
+          src={
+            "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/hero.png"
+          }
+          alt=""
+          fill
+          objectFit="cover"
+        />
       )}
       <div className="overlay absolute inset-0  bg-black/50" />
       <Navbar />

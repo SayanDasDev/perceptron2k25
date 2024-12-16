@@ -4,7 +4,7 @@ export const OrganizersData: TeamItem[] = [
   {
     name: "Tuhin Patra",
     role: "Secretary",
-    avatar: "/images/Tuhin_Patra.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Tuhin_Patra.jpg",
     links: {
       github: "https://github.com/TuhinPatra633",
       linkedIn: "http://www.linkedin.com/in/tuhin-patra-226651294",
@@ -15,7 +15,7 @@ export const OrganizersData: TeamItem[] = [
   {
     name: "Debayan Dutta",
     role: "Joint Secretary",
-    avatar: "/images/debayan.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/debayan.jpg",
     links: {
       github: "https://github.com/debayan-datta",
       linkedIn: "https://www.linkedin.com/in/dattadebayan2001",
@@ -26,7 +26,7 @@ export const OrganizersData: TeamItem[] = [
   {
     name: "Anurag Joardar",
     role: "Convenor",
-    avatar: "/images/Anurag.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Anurag.jpg",
     links: {
       github: "https://github.com/Achilles1012",
       linkedIn: "https://www.linkedin.com/in/anuragjoardar2000",
@@ -37,7 +37,7 @@ export const OrganizersData: TeamItem[] = [
   {
     name: "Debanjan Nanda",
     role: "Treasurer",
-    avatar: "/images/debanjan.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/debanjan.jpg",
     links: {
       github: "https://github.com/DebanjanNanda",
       linkedIn: "https://www.linkedin.com/in/debanjan-nanda",
@@ -51,7 +51,7 @@ export const TeamLeadsData: TeamItem[] = [
   {
     name: "Saikat Kumar Ghosh",
     role: "Better Call Tal Lead",
-    avatar: "/images/Saikat.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Saikat.jpg",
     links: {
       github: "https://github.com/ghoshsaikat2024",
       linkedIn: "https://linkedin.com/in/saikat-ghosh-0340551ba",
@@ -62,7 +62,7 @@ export const TeamLeadsData: TeamItem[] = [
   {
     name: "Uddalak Mukherjee",
     role: "Exquizzit Lead",
-    avatar: "/images/Uddalak.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Uddalak.jpg",
     links: {
       github: "https://github.com/Jacknife49",
       linkedIn: "https://www.linkedin.com/in/uddalak-mukherjee-38950321b",
@@ -73,7 +73,7 @@ export const TeamLeadsData: TeamItem[] = [
   {
     name: "Ayan Maity",
     role: "Deep Think Lead",
-    avatar: "/images/Ayan_maity.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Ayan_maity.jpg",
     links: {
       github: "https://github.com/AyanMaity435601",
       linkedIn: "https://www.linkedin.com/in/ayan--maity",
@@ -84,7 +84,7 @@ export const TeamLeadsData: TeamItem[] = [
   {
     name: "Biswajit Rana",
     role: "The Turing Show Lead",
-    avatar: "/images/biswajit.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/biswajit.jpg",
     links: {
       github: "https://github.com/biswajit-github-2022",
       linkedIn: "https://www.linkedin.com/in/biswajit-rana/",
@@ -95,7 +95,7 @@ export const TeamLeadsData: TeamItem[] = [
   {
     name: "Amit Bera",
     role: "Clash of Wheels Lead",
-    avatar: "/images/Amit_Bera.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Amit_Bera.jpg",
     links: {
       github: "https://github.com/AmitBera007/",
       linkedIn: "https://www.linkedin.com/in/amit-bera/",
@@ -106,7 +106,7 @@ export const TeamLeadsData: TeamItem[] = [
   {
     name: "Atanu Saha",
     role: "Enigma Equation Lead",
-    avatar: "/images/Atanu.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Atanu.jpg",
     links: {
       // github: "https://www.linkedin.com/in/debanjan-nanda",
       linkedIn: "https://www.linkedin.com/in/atanu-saha-4aa183210",
@@ -117,7 +117,7 @@ export const TeamLeadsData: TeamItem[] = [
   {
     name: "Diptesh Saha",
     role: "Under the Hammer Lead",
-    avatar: "/images/Diptesh.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Diptesh.jpg",
     links: {
       // github: "https://github.com/DebanjanNanda",
       linkedIn: "https://www.linkedin.com/in/diptesh-saha-634349254",
@@ -128,7 +128,7 @@ export const TeamLeadsData: TeamItem[] = [
   {
     name: "Aniket Ghosh",
     role: "Beyond the Lens Lead",
-    avatar: "/images/Aniket.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Aniket.jpg",
     links: {
       github: "https://github.com/Nik-from-H",
       // linkedIn: "https://www.linkedin.com/in/diptesh-saha-634349254",
@@ -139,7 +139,7 @@ export const TeamLeadsData: TeamItem[] = [
   {
     name: "Samapan Kar",
     role: "Lens and Light Lead",
-    avatar: "/images/Samapan_Kar.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Samapan_Kar.jpg",
     links: {
       github: "https://github.com/sama7fb",
       linkedIn: "https://www.linkedin.com/in/samapankar",
@@ -153,7 +153,7 @@ export const DesignersData: TeamItem[] = [
   {
     name: "Ayantanu Laha",
     role: "Design Team Lead",
-    avatar: "/images/Ayantanu.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Ayantanu.jpg",
     links: {
       github: "https://github.com/Ayantanu2002",
       linkedIn: "https://www.linkedin.com/in/ayantanu-laha-2002/",
@@ -164,7 +164,7 @@ export const DesignersData: TeamItem[] = [
   {
     name: "Sayan Das",
     role: "Web Developer",
-    avatar: "/images/sayan_das.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/sayan_das.jpg",
     links: {
       github: "https://github.com/SayanDasDev",
       linkedIn: "https://www.linkedin.com/in/das-sayan/",
@@ -175,7 +175,7 @@ export const DesignersData: TeamItem[] = [
   {
     name: "Pankaj Sadukha",
     role: "Designer",
-    avatar: "/images/pankaj.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/pankaj.jpg",
     links: {
       github: "https://github.com/PANKAJ-SADHUKHAN",
       linkedIn: "https://www.linkedin.com/in/pankaj-sadhukhan",
@@ -186,7 +186,7 @@ export const DesignersData: TeamItem[] = [
   {
     name: "Rajarshi Saha",
     role: "Designer",
-    avatar: "/images/Rajarshi.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Rajarshi.jpg",
     links: {
       github: "https://github.com/Rsaha-16",
       linkedIn: "https://www.linkedin.com/in/rajarshi16",
@@ -197,7 +197,7 @@ export const DesignersData: TeamItem[] = [
   {
     name: "Niladri Ghosh",
     role: "Videographer",
-    avatar: "/images/Nilardi.jpg",
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Nilardi.jpg",
     links: {
       // github: "https://github.com/DebanjanNanda",
       linkedIn: "https://www.linkedin.com/in/niladri-ghosh-3aa76b320",

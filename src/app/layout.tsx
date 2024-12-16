@@ -39,6 +39,18 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons: {
+    icon: [
+      {
+        url: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/development/src/app/favicon.ico",
+        type: "image/x-icon",
+      },
+    ],
+    shortcut:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/development/src/app/icon.png",
+    apple:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/development/src/app/apple-touch-icon.png",
+  },
   twitter: {
     card: "summary_large_image",
     title: siteConfig.name,

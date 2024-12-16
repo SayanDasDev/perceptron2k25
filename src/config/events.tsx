@@ -9,7 +9,8 @@ export const eventsConfig: EventItem[] = [
   {
     title: "ExQuizzIt",
     description: "Quiz Competition",
-    imageURL: "/images/quiz.png",
+    imageURL:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/quiz.png",
     prize: "₹ 6K",
     date: "11th Jan",
     content: () => {
@@ -41,7 +42,8 @@ export const eventsConfig: EventItem[] = [
   {
     title: "Better Call Tal",
     description: "Chess Competition",
-    imageURL: "/images/chess.jpg",
+    imageURL:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/chess.jpg",
     prize: "₹ 6K",
     date: "10th Jan",
     content: () => {
@@ -105,7 +107,8 @@ export const eventsConfig: EventItem[] = [
   {
     title: "Deep Think",
     description: "AI Hackathon",
-    imageURL: "/images/hackathon.png",
+    imageURL:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/hackathon.png",
     prize: "₹ 6K",
     date: "10th Jan",
     content: () => {
@@ -141,7 +144,8 @@ export const eventsConfig: EventItem[] = [
   {
     title: "The Turing Show",
     description: "Coding Competition",
-    imageURL: "/images/coding.jpg",
+    imageURL:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/coding.jpg",
     prize: "₹ 6K",
     date: "11th Jan",
     content: () => {
@@ -172,7 +176,8 @@ export const eventsConfig: EventItem[] = [
   {
     title: "Clash of Wheels",
     description: "Gaming Competition",
-    imageURL: "/images/gaming.png",
+    imageURL:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/gaming.png",
     prize: "₹ 6K",
     date: "10th Jan",
     content: () => {
@@ -215,7 +220,8 @@ export const eventsConfig: EventItem[] = [
   {
     title: "Enigma Equation",
     description: "Puzzle Solving Competition",
-    imageURL: "/images/puzzle.jpg",
+    imageURL:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/puzzle.jpg",
     prize: "₹ 6K",
     date: "10th Jan",
     content: () => {
@@ -266,7 +272,8 @@ export const eventsConfig: EventItem[] = [
   {
     title: "Under the Hammer",
     description: "Auction",
-    imageURL: "/images/auction.png",
+    imageURL:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/auction.png",
     prize: "₹ 6K",
     date: "11th Jan",
     content: () => {
@@ -338,7 +345,8 @@ export const eventsConfig: EventItem[] = [
   {
     title: "Beyond the lines",
     description: "Creative Writing",
-    imageURL: "/images/beyond_the_lines.png",
+    imageURL:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/beyond_the_lines.png",
     prize: "₹ 4K",
     content: () => {
       return (
@@ -395,7 +403,8 @@ export const eventsConfig: EventItem[] = [
   {
     title: "Lens and Light",
     description: "Photography Competition",
-    imageURL: "/images/photography.png",
+    imageURL:
+      "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/photography.png",
     prize: "₹ 4K",
     content: () => {
       return (
