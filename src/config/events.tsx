@@ -52,12 +52,20 @@ export const eventsConfig: EventItem[] = [
               </span>{" "}
               Preliminary rounds (Swiss style) will be played on a virtual board
               via Lichess.org or Chess.com, followed by offline board knockout
-              rounds for the top 8 players.
+              rounds for the top{" "}
+              <span className="font-semibold text-primary">8 players</span>.
             </div>,
             <div>
               <span className="font-semibold text-primary">Time Control:</span>{" "}
-              5 minutes per player for preliminary and quarterfinal rounds; 10
-              minutes for semifinals and finals.
+              <EventRulesList
+                className="space-y-[1px]"
+                rules={[
+                  <span>
+                    5 minutes per player for preliminary and quarterfinal rounds
+                  </span>,
+                  <span>10 minutes for semifinals and finals.</span>,
+                ]}
+              />
             </div>,
             <div>
               <span className="font-semibold text-primary">
@@ -136,9 +144,18 @@ export const eventsConfig: EventItem[] = [
       return (
         <EventRulesList
           rules={[
-            <div>This contest will happen in only one round.</div>,
-            <div>Must have a HackerRank id.</div>,
-            <div>Duration of the Contest will be 1 hour.</div>,
+            <div>
+              This contest will happen in only{" "}
+              <span className="font-semibold text-primary">one round</span>.
+            </div>,
+            <div>
+              Must have a{" "}
+              <span className="font-semibold text-primary">HackerRank id</span>.
+            </div>,
+            <div>
+              Duration of the Contest will be{" "}
+              <span className="font-semibold text-primary">1 hour</span>.
+            </div>,
             <div>
               Candidates will be given marks upon how many test cases are
               passed.
@@ -263,12 +280,24 @@ export const eventsConfig: EventItem[] = [
               identification number. Spot registration is allowed.
             </div>,
             <div>
-              The event consists of two rounds: a prelims round (general
-              knowledge quiz) and a finals auction round where teams build a
-              squad of{" "}
-              <span className="font-semibold text-primary">15 players</span>{" "}
-              within a budget of{" "}
-              <span className="font-semibold text-primary">90 crores</span>.
+              The event consists of two rounds:
+              <EventRulesList
+                className="space-y-[1px]"
+                rules={[
+                  <span>a prelims round (general knowledge quiz)</span>,
+                  <span>
+                    a finals auction round where teams build a squad of{" "}
+                    <span className="font-semibold text-primary">
+                      15 players
+                    </span>{" "}
+                    within a budget of{" "}
+                    <span className="font-semibold text-primary">
+                      90 crores
+                    </span>
+                    .
+                  </span>,
+                ]}
+              />
             </div>,
             <div>
               Teams bid on players with specific bidding increments based on
@@ -309,8 +338,11 @@ export const eventsConfig: EventItem[] = [
         <EventRulesList
           rules={[
             <div>
-              All interested participants must register beforehand, no spot
-              registration will be available.
+              All interested participants must register beforehand,{" "}
+              <span className="font-semibold text-primary">
+                no spot registration
+              </span>{" "}
+              will be available.
             </div>,
             <div>
               Registration will close at{" "}
@@ -322,12 +354,18 @@ export const eventsConfig: EventItem[] = [
             <div>
               Participants have{" "}
               <span className="font-semibold text-primary">24 hours</span> to
-              submit their writing in typing in a pdf and doc format. No
-              handwritten submission will be entertained.
+              submit their writing in typing in a{" "}
+              <span className="font-semibold text-primary">pdf and doc</span>{" "}
+              format.{" "}
+              <span className="font-semibold text-primary">
+                No handwritten submission
+              </span>{" "}
+              will be entertained.
             </div>,
             <div>
-              The writing medium is English. Both the writing format and topics
-              will be given out through online on{" "}
+              The writing medium is{" "}
+              <span className="font-semibold text-primary">English</span>. Both
+              the writing format and topics will be given out through online on{" "}
               <span className="font-semibold text-primary">
                 9th January 12:00 AM
               </span>
@@ -356,18 +394,37 @@ export const eventsConfig: EventItem[] = [
       return (
         <EventRulesList
           rules={[
-            <div>Online photography event.</div>,
-            <div>Themes will be decided later. There will be two themes.</div>,
-            <div>Aspect ratio is 3:4 or 4:3 both are accepted.</div>,
             <div>
-              Each participant has to submit maximum of one photograph from each
-              of the themes. Both mobile and camera are allowed for the
-              competition. Pictures should have timestamps with participant’s
-              names.
+              <span className="font-semibold text-primary">Online</span>{" "}
+              photography event.
+            </div>,
+            <div>Themes will be decided later. There will be two themes.</div>,
+            <div>
+              Aspect ratio is{" "}
+              <span className="font-semibold text-primary">3:4 or 4:3</span>{" "}
+              both are accepted.
             </div>,
             <div>
-              Basic editing and colour grading is allowed. Participants have to
-              submit both of the raw and edited pictures.
+              Each participant has to submit{" "}
+              <span className="font-semibold text-primary">
+                maximum of one photograph
+              </span>{" "}
+              from each of the themes.
+            </div>,
+            <div>Both mobile and camera are allowed for the competition.</div>,
+            <div>
+              Pictures should have{" "}
+              <span className="font-semibold text-primary">timestamps</span>{" "}
+              with participant’s{" "}
+              <span className="font-semibold text-primary">names</span>.
+            </div>,
+            <div>Basic editing and colour grading is allowed.</div>,
+            <div>
+              Participants have to submit{" "}
+              <span className="font-semibold text-primary">
+                both of the raw and edited
+              </span>{" "}
+              pictures.
             </div>,
           ]}
         />
