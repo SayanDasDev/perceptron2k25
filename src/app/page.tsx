@@ -22,15 +22,15 @@ export default function Home() {
       >
         <Hero />
       </section>
-      <HeroHighlight containerClassName="bg-slate-950 top-0 left-0 w-screen h-full pb-20">
+      <HeroHighlight containerClassName="bg-slate-950 h-full pb-20">
         <section
           id="about"
-          className="about w-screen px-12 border-b-2 border-t-2 border-[#3a4150] !border-r-0 !border-l-0  flex items-center justify-center text-9xl bg-gradient-to-b from-black to-slate-900 text-white"
+          className="about px-12 border-t-2 border-[#3a4150] !border-r-0 !border-l-0  flex items-center justify-center text-9xl bg-gradient-to-b from-black to-slate-900 text-white"
         >
           <About />
         </section>
 
-        <section id="events" className="flex">
+        <section id="events" className="flex items-center justify-center">
           <Events />
         </section>
 

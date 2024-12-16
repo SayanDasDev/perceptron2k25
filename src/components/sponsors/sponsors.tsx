@@ -42,11 +42,41 @@ const Sponsors = () => {
                       onClick={() => window.open(link, "_blank")}
                       className="px-4 py-2 bg-background rounded-full text-foreground/80 hover:text-foreground"
                     >
-                      {social == "website" && <Globe size={16} />}
-                      {social == "linkedin" && <Linkedin size={16} />}
-                      {social == "facebook" && <Facebook size={16} />}
-                      {social == "instagram" && <Instagram size={16} />}
-                      {social == "youtube" && <Youtube size={16} />}
+                      {social == "website" && (
+                        <>
+                          <span className="sr-only">Website</span>
+                          <Globe size={16} />
+                        </>
+                      )}
+                      {social == "linkedin" && (
+                        <>
+                          <span
+                            className="sr-only
+                      "
+                          >
+                            LinkedIn
+                          </span>
+                          <Linkedin size={16} />
+                        </>
+                      )}
+                      {social == "facebook" && (
+                        <>
+                          <span className="sr-only">Facebook</span>
+                          <Facebook size={16} />
+                        </>
+                      )}
+                      {social == "instagram" && (
+                        <>
+                          <span className="sr-only">Instagram</span>
+                          <Instagram size={16} />
+                        </>
+                      )}
+                      {social == "youtube" && (
+                        <>
+                          <span className="sr-only">YouTube</span>
+                          <Youtube size={16} />
+                        </>
+                      )}
                     </CardItem>
                   )
                 )}

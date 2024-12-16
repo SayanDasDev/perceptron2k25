@@ -87,9 +87,15 @@ const Hero = () => {
           >
             <div ref={playIconRef}>
               {videoPlaying ? (
-                <Pause className="w-8 h-8 xl:w-12 xl:h-12 scale-[250%]" />
+                <>
+                  <span className="sr-only">Pause Video</span>
+                  <Pause className="w-8 h-8 xl:w-12 xl:h-12 scale-[250%]" />
+                </>
               ) : (
-                <Play className="w-8 h-8 xl:w-12 xl:h-12 scale-[250%]" />
+                <>
+                  <span className="sr-only">Play Video</span>
+                  <Play className="w-8 h-8 xl:w-12 xl:h-12 scale-[250%]" />
+                </>
               )}
             </div>
           </Button>

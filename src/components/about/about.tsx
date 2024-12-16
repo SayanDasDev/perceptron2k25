@@ -70,9 +70,9 @@ const About = () => {
 
   return (
     <div
-      className={`w-full h-full border-subtle max-md:border-0 !border-t-0 py-12 !border-b-0`}
+      className={`w-screen h-full flex flex-col items-center justify-center py-12 sm:pr-4 !border-b-0`}
     >
-      <div className="h-full border-subtle flex items-center justify-center max-md:border-0 !border-l-0 !border-r-0">
+      <div className="h-full flex items-center justify-center">
         <div
           className={`${font.className} my-auto flex flex-col p-6 justify-center items-center`}
         >

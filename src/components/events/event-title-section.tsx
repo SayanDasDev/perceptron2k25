@@ -4,7 +4,7 @@ const EventTitleSection = () => {
   const { sub } = useFonts();
 
   return (
-    <div className="flex flex-col gap-16 md:gap-10 text-primary/15 overflow-clip">
+    <div className="flex flex-col w-screen gap-16 md:gap-10 text-primary/15 overflow-clip">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="w-dvw h-1/3"
@@ -26,7 +26,7 @@ const EventTitleSection = () => {
           <p className="">LEARN</p>
           <p className="">ENJOY</p>
         </div>
-        <p className="text-4xl md:text-8xl">PERCEPTRON 2025</p>
+        <p className="text-4xl sm:text-6xl md:text-8xl">PERCEPTRON 2025</p>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"

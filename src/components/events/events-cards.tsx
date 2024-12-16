@@ -182,13 +182,13 @@ export function EventsCards() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-6xl mx-auto w-full gap-4 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="max-w-6xl mx-auto w-full gap-4 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {eventsConfig.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col justify-between items-center bg-slate-950 hover:bg-slate-900 rounded-xl cursor-pointer md:border border-background/10"
+            className="p-4 flex flex-col justify-between items-center sm:bg-slate-950 hover:bg-slate-900 rounded-xl cursor-pointer md:border border-background/10"
           >
             <div className="flex gap-4 justify-center items-center flex-col ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -223,7 +223,7 @@ export function EventsCards() {
             </motion.button>
           </motion.div>
         ))}
-      </ul>
+      </div>
     </>
   );
 }
