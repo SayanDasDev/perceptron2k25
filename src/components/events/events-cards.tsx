@@ -41,10 +41,12 @@ export function EventsCards() {
       });
     } else {
       document.body.style.overflow = "auto";
-      const menuElements = document.querySelectorAll(".menu");
-      menuElements.forEach((element) => {
-        (element as HTMLElement).style.display = "block";
-      });
+      setTimeout(() => {
+        const menuElements = document.querySelectorAll(".menu");
+        menuElements.forEach((element) => {
+          (element as HTMLElement).style.display = "block";
+        });
+      }, 500);
     }
 
     window.addEventListener("keydown", onKeyDown);
