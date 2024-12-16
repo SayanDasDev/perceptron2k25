@@ -22,7 +22,7 @@ export default function Home() {
       >
         <Hero />
       </section>
-      <HeroHighlight containerClassName="bg-slate-950 top-0 left-0 w-screen h-full">
+      <HeroHighlight containerClassName="bg-slate-950 top-0 left-0 w-screen h-full pb-20">
         <section
           id="about"
           className="about w-screen px-12 border-b-2 border-t-2 border-[#3a4150] !border-r-0 !border-l-0  flex items-center justify-center text-9xl bg-gradient-to-b from-black to-slate-900 text-white"
@@ -54,7 +54,7 @@ export default function Home() {
           <FAQ />
         </section>
       </HeroHighlight>
-      <section id="footer" className="flex mt-20 bg-transparent">
+      <section id="footer" className="flex bg-transparent">
         <Footer />
       </section>
     </main>

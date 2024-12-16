@@ -87,7 +87,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${font.className} no-scrollbar`}>
+      <body className={`${font.className} no-scrollbar bg-slate-950`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
