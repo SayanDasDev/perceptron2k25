@@ -16,7 +16,7 @@ const Sponsors = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4 gap-10 max-w-7xl mx-auto w-full">
         {sponsorData.map((sponsor, index) => (
           <CardContainer key={index} className="flex flex-1 inter-var">
-            <CardBody className="bg-slate-950 hover:bg-slate-900 flex flex-col items-center relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] border-white/[0.2] border-black/[0.1] w-full max-w-[380px] h-auto rounded-xl p-6 border  ">
+            <CardBody className="hover:bg-slate-900 flex flex-col items-center relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] border-black/[0.1] w-full max-w-[380px] h-auto rounded-xl p-6 border  ">
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image
                   src={sponsor.imageURL}

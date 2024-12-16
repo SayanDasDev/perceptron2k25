@@ -20,7 +20,7 @@ function BgVideo() {
         controls={false}
         autoPlay={true}
         loop={true}
-        url="https://videos.pexels.com/video-files/5091624/5091624-hd_1920_1080_24fps.mp4"
+        url="/hero-video.mp4"
         playing
         muted
         width="100vw"

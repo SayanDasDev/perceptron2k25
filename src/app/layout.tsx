@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import Script from "next/script";
 
+import { BgPattern } from "@/components/bg-pattern";
 import { ThemeProvider } from "@/components/theme-provider";
 
 import { siteConfig } from "@/config/site";
@@ -87,7 +88,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${font.className} no-scrollbar bg-slate-950`}>
+      <body className={`${font.className} no-scrollbar`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -95,7 +96,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-        {/* <BgPattern /> */}
+        <BgPattern />
       </body>
     </html>
   );

@@ -171,7 +171,7 @@ export function EventsCards() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col justify-between items-center hover:bg-slate-900 rounded-xl cursor-pointer md:border border-background/10"
+            className="p-4 flex flex-col justify-between items-center bg-slate-950 hover:bg-slate-900 rounded-xl cursor-pointer md:border border-background/10"
           >
             <div className="flex gap-4 justify-center items-center flex-col ">
               <motion.div layoutId={`image-${card.title}-${id}`}>

@@ -13,7 +13,7 @@ import Team from "@/components/team/team";
 
 export default function Home() {
   return (
-    <main className="overflow-x-hidden bg-slate-950">
+    <main className="overflow-x-hidden bg-transparent z-20">
       <NavMenu />
       <section
         id="hero"
@@ -33,27 +33,27 @@ export default function Home() {
         <Events />
       </section>
 
-      <section id="speakers" className="flex bg-slate-950">
+      <section id="speakers" className="flex bg-transparent">
         <Speakers />
       </section>
 
-      <section id="sponsors" className="flex mt-20 bg-slate-950">
+      <section id="sponsors" className="flex mt-20 bg-transparent">
         <Sponsors />
       </section>
 
-      <section id="team" className="flex mt-20 bg-slate-950">
+      <section id="team" className="flex mt-20 bg-transparent">
         <Team />
       </section>
 
-      <section id="gallery" className="flex mt-20 bg-slate-950">
+      <section id="gallery" className="flex mt-20 bg-transparent">
         <Gallery />
       </section>
 
-      <section id="faqs" className="flex mt-20 bg-slate-950">
+      <section id="faqs" className="flex mt-20 bg-transparent">
         <FAQ />
       </section>
 
-      <section id="footer" className="flex mt-20 bg-slate-950">
+      <section id="footer" className="flex mt-20 bg-transparent">
         <Footer />
       </section>
     </main>
