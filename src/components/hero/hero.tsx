@@ -54,7 +54,7 @@ const Hero = () => {
         <Logos.Perceptron className="w-[20vw] hero-title-logo-left" />
         <HeroTitle />
         <Image
-          src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/development/public/icons/rkm-logo.webp`}
+          src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/icons/rkm-logo.webp`}
           alt=""
           width={400}
           height={400}

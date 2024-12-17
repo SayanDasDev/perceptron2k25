@@ -20,7 +20,7 @@ const Sponsors = () => {
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image
                   // src={sponsor.imageURL}
-                  src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/development/public${sponsor.imageURL}`}
+                  src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public${sponsor.imageURL}`}
                   width={200}
                   height={200}
                   alt={sponsor.name}
