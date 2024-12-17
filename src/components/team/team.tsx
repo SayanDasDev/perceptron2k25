@@ -6,7 +6,7 @@ import TeamsData from "./teams-data";
 
 const Team = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center space-y-12">
+    <div className="w-screen flex flex-col items-center justify-center space-y-12">
       <Heading heading="Our Team" />
       <SparklesText className="text-background text-2xl" text="Organizers" />
       <TeamsData data={OrganizersData} isOrganizer={true} />

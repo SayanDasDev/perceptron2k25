@@ -38,15 +38,21 @@ export default function Home() {
           <Speakers />
         </section>
 
-        <section id="sponsors" className="flex mt-20 bg-transparent">
+        <section
+          id="sponsors"
+          className="flex justify-center mt-20 bg-transparent"
+        >
           <Sponsors />
         </section>
 
-        <section id="team" className="flex mt-20 bg-transparent">
+        <section id="team" className="flex justify-center mt-20 bg-transparent">
           <Team />
         </section>
 
-        <section id="gallery" className="flex mt-20 bg-transparent">
+        <section
+          id="gallery"
+          className="flex justify-center mt-20 bg-transparent"
+        >
           <Gallery />
         </section>
 
