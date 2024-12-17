@@ -19,7 +19,8 @@ const Sponsors = () => {
             <CardBody className="hover:bg-slate-900 flex flex-col items-center relative group/card hover:shadow-2xl hover:shadow-emerald-500/[0.1] border-black/[0.1] w-full max-w-[380px] h-auto rounded-xl p-6 border  ">
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image
-                  src={sponsor.imageURL}
+                  // src={sponsor.imageURL}
+                  src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/development/public${sponsor.imageURL}`}
                   width={200}
                   height={200}
                   alt={sponsor.name}

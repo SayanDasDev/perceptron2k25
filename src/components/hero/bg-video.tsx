@@ -20,7 +20,7 @@ function BgVideo() {
         controls={false}
         autoPlay={true}
         loop={true}
-        url="/hero-video.mp4"
+        url="https://perceptron2k25.vercel.app/hero-video.mp4"
         playing
         muted
         width="100vw"

@@ -7,7 +7,7 @@ export function AboutVideo() {
         className="block"
         animationStyle="top-in-bottom-out"
         videoSrc="https://www.youtube.com/embed/AQ0y952kZyA?si=IjfPc3v05bwdTkN"
-        thumbnailSrc="/images/youtube-thumbnail.png"
+        thumbnailSrc="/home/debanjan/perceptron/perceptron2k25/build/images/youtube-thumbnail.png"
         thumbnailAlt="Hero Video"
       />
     </div>
