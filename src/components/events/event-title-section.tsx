@@ -26,7 +26,7 @@ const EventTitleSection = () => {
           <p className="">LEARN</p>
           <p className="">ENJOY</p>
         </div>
-        <p className="text-4xl sm:text-6xl md:text-8xl">PERCEPTRON 2025</p>
+        <p className="text-4xl sm:text-6xl md:text-7xl">PERCEPTRON 2025</p>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
