@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Perceptron 2025",
   url: "https://cs.rkmvu.ac.in/perceptron25",
-  ogImage: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/development/src/app/opengraph-image.png",
+  ogImage: "/opengraph-image.png",
   description:
     "Annual Tech-fest at Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI) 2025",
   links: {
