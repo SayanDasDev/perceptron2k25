@@ -15,7 +15,7 @@ const Speaker = () => {
           return (
             <BackgroundGradient
               key={index}
-              className="rounded-[22px] p-4 max-[1270px]:w-[80vw] max md:p-10 md:grid md:grid-cols-[400px_1fr] dark:bg-slate-900"
+              className="rounded-[22px] p-4 max-[1270px]:w-[80vw] max min-[824px]:p-10 min-[824px]:grid min-[824px]:grid-cols-[400px_1fr] dark:bg-slate-900"
             >
               <Image
                 src={speaker.image}
@@ -25,7 +25,7 @@ const Speaker = () => {
                 className="object-contain w-full rounded-[22px]"
               />
               {/* <div className="flex"> */}
-              <div className="md:pl-10 my-auto">
+              <div className="min-[824px]:pl-10 my-auto">
                 <Badge className="mt-4" variant={"secondary"}>
                   {speaker.role}
                 </Badge>

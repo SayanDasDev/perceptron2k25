@@ -127,13 +127,8 @@ export const TeamLeadsData: TeamItem[] = [
   },
   {
     name: "Aniket Ghosh",
-<<<<<<< HEAD
-    role: "Beyond the Lens Lead",
-    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Aniket.jpg",
-=======
     role: "Beyond the Lines Lead",
-    avatar: "/images/Aniket.jpg",
->>>>>>> development
+    avatar: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/Aniket.jpg",
     links: {
       github: "https://github.com/Nik-from-H",
       // linkedIn: "https://www.linkedin.com/in/diptesh-saha-634349254",

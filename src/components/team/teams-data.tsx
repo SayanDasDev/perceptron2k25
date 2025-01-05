@@ -32,8 +32,8 @@ const TeamsData = ({
             {member.role}
           </Badge>
           <Image
-            // src={member.avatar}
-            src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public${member.avatar}`}
+            src={member.avatar}
+            // src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public${member.avatar}`}
             fill
             alt={""}
             className={cn(

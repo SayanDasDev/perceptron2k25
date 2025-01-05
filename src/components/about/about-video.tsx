@@ -8,11 +8,7 @@ export function AboutVideo() {
         animationStyle="top-in-bottom-out"
         videoSrc="https://www.youtube.com/embed/AQ0y952kZyA?si=IjfPc3v05bwdTkN"
         thumbnailSrc="https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/youtube-thumbnail.png"
-<<<<<<< HEAD
         thumbnailAlt="About Video"
-=======
-        thumbnailAlt="Hero Video"
->>>>>>> development
       />
     </div>
   );

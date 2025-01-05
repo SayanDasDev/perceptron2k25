@@ -25,6 +25,7 @@ import {
 } from "@/config/events";
 import { cn } from "@/lib/utils";
 
+import { Logos } from "../logos";
 import { Badge } from "../ui/badge";
 import { buttonVariants } from "../ui/button";
 
@@ -110,7 +111,7 @@ export function EventsCards() {
                   priority
                   width={272}
                   height={272}
-                  src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public${active.imageURL}`}
+                  src={active.imageURL}
                   alt={active.title}
                   className="w-full max-md:h-[25vh] h-80 md:h-full md:rounded-br-3xl object-cover object-top"
                 />
@@ -192,6 +193,7 @@ export function EventsCards() {
                         <ResponsiveModalContent>
                           <ResponsiveModalHeader>
                             <ResponsiveModalTitle>
+                              <Logos.closed className="size-36 -rotate-12 mx-auto" />
                               Registration Closed for this event!
                             </ResponsiveModalTitle>
                             <ResponsiveModalDescription>
@@ -238,7 +240,7 @@ export function EventsCards() {
                   width={272}
                   height={272}
                   // src={card.imageURL}
-                  src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public${card.imageURL}`}
+                  src={card.imageURL}
                   alt={card.title}
                   className="h-60 w-60 rounded-lg object-cover object-top"
                 />
