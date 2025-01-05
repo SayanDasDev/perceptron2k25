@@ -44,21 +44,23 @@ const Speaker = () => {
                     ", " +
                     speaker.institution}
                 </p>
-                <p className="text-2xl max-sm:text-lg leading-none mt-4 text-neutral-400">
-                  <span className="text-neutral-200 font-medium">Topic:</span>{" "}
+                <p className="text-2xl max-sm:text-lg leading-snug mt-4 text-slate-400">
+                  <span className="text-slate-200 font-medium">Topic:</span>{" "}
                   {speaker.topic}
                 </p>
-                <div className="rounded-full w-fit pl-3 pr-2 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-slate-800">
-                  <Calendar size={14} />
-                  <span className="bg-slate-700 rounded-full px-2 py-1 text-white">
-                    {speaker.date}
-                  </span>
-                </div>
-                <div className="rounded-full w-fit pl-3 pr-2 py-1 text-white flex items-center space-x-1 bg-black mt-2 text-xs font-bold dark:bg-slate-800">
-                  <Clock size={14} />
-                  <span className="bg-slate-700 rounded-full px-2 py-1 text-white">
-                    {speaker.time}
-                  </span>
+                <div className="flex gap-2 max-[300px]:gap-0 flex-wrap">
+                  <div className="rounded-full w-fit pl-3 pr-2 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-slate-800">
+                    <Calendar size={14} />
+                    <span className="bg-slate-700 rounded-full px-2 py-1 text-white text-nowrap">
+                      {speaker.date}
+                    </span>
+                  </div>
+                  <div className="rounded-full w-fit pl-3 pr-2 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-slate-800">
+                    <Clock size={14} />
+                    <span className="bg-slate-700 rounded-full px-2 py-1 text-white text-nowrap">
+                      {speaker.time}
+                    </span>
+                  </div>
                 </div>
               </div>
               {/* </div> */}
