@@ -11,6 +11,7 @@ import { Speakers } from "@/components/speakers/speakers";
 import Sponsors from "@/components/sponsors/sponsors";
 import Team from "@/components/team/team";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
+import Workshop from "@/components/workshop/workshop";
 
 export default function Home() {
   return (
@@ -36,6 +37,10 @@ export default function Home() {
 
         <section id="speakers" className="flex bg-transparent">
           <Speakers />
+        </section>
+
+        <section id="workshop" className="flex bg-transparent">
+          <Workshop />
         </section>
 
         <section

@@ -1,34 +1,71 @@
 import Image from "next/image";
 
+import { Calendar, Clock } from "lucide-react";
+
+import { speakersData } from "@/config/speakers";
+
 import { BackgroundGradient } from "../ui/background-gradient";
+import { Badge } from "../ui/badge";
 
 const Speaker = () => {
   return (
     <div>
-      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
-        <Image
-          src={`/jordans.webp`}
-          alt="jordans"
-          height="400"
-          width="400"
-          className="object-contain"
-        />
-        <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
-          Air Jordan 4 Retro Reimagined
-        </p>
-
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          The Air Jordan 4 Retro Reimagined Bred will release on Saturday,
-          February 17, 2024. Your best opportunity to get these right now is by
-          entering raffles and waiting for the official releases.
-        </p>
-        <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-          <span>Buy now </span>
-          <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
-            $100
-          </span>
-        </button>
-      </BackgroundGradient>
+      <div className="max-w-screen-xl p-10 grid grid-cols-1">
+        {speakersData.map((speaker, index) => {
+          return (
+            <BackgroundGradient
+              key={index}
+              className="rounded-[22px] p-4 max-[1270px]:w-[80vw] max md:p-10 md:grid md:grid-cols-[400px_1fr] dark:bg-slate-900"
+            >
+              <Image
+                src={speaker.image}
+                alt={speaker.name}
+                height="400"
+                width="400"
+                className="object-contain w-full rounded-[22px]"
+              />
+              {/* <div className="flex"> */}
+              <div className="md:pl-10 my-auto">
+                <Badge className="mt-4" variant={"secondary"}>
+                  {speaker.role}
+                </Badge>
+                <p className="text-2xl leading-none font-bold text-black mt-2 mb-1 dark:text-neutral-200">
+                  {speaker.name}
+                </p>
+                <p className="text-[0.6rem] sm:text-sm leading-none text-neutral-400">
+                  {/* {speaker.designation}
+                    <br />
+                    {speaker.department}
+                    <br />
+                    {speaker.institution} */}
+                  {speaker.designation +
+                    ", " +
+                    speaker.department +
+                    ", " +
+                    speaker.institution}
+                </p>
+                <p className="text-2xl max-sm:text-lg leading-none mt-4 text-neutral-400">
+                  <span className="text-neutral-200 font-medium">Topic:</span>{" "}
+                  {speaker.topic}
+                </p>
+                <div className="rounded-full w-fit pl-3 pr-2 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-slate-800">
+                  <Calendar size={14} />
+                  <span className="bg-slate-700 rounded-full px-2 py-1 text-white">
+                    {speaker.date}
+                  </span>
+                </div>
+                <div className="rounded-full w-fit pl-3 pr-2 py-1 text-white flex items-center space-x-1 bg-black mt-2 text-xs font-bold dark:bg-slate-800">
+                  <Clock size={14} />
+                  <span className="bg-slate-700 rounded-full px-2 py-1 text-white">
+                    {speaker.time}
+                  </span>
+                </div>
+              </div>
+              {/* </div> */}
+            </BackgroundGradient>
+          );
+        })}
+      </div>
     </div>
   );
 };

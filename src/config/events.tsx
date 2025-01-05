@@ -107,6 +107,7 @@ export const eventsConfig: EventItem[] = [
     description: "AI Hackathon",
     imageURL: "/images/hackathon.png",
     prize: "₹ 6K",
+    isOver: true,
     date: "10th Jan",
     content: () => {
       return (
@@ -336,7 +337,7 @@ export const eventsConfig: EventItem[] = [
     },
   },
   {
-    title: "Beyond the lines",
+    title: "Beyond the Lines",
     description: "Creative Writing",
     imageURL: "/images/beyond_the_lines.png",
     prize: "₹ 4K",
