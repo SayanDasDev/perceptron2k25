@@ -11,6 +11,7 @@ import { Speakers } from "@/components/speakers/speakers";
 import Sponsors from "@/components/sponsors/sponsors";
 import Team from "@/components/team/team";
 import { HeroHighlight } from "@/components/ui/hero-highlight";
+import Workshop from "@/components/workshop/workshop";
 
 export default function Home() {
   return (
@@ -38,15 +39,25 @@ export default function Home() {
           <Speakers />
         </section>
 
-        <section id="sponsors" className="flex mt-20 bg-transparent">
+        <section id="workshop" className="flex bg-transparent">
+          <Workshop />
+        </section>
+
+        <section
+          id="sponsors"
+          className="flex justify-center mt-20 bg-transparent"
+        >
           <Sponsors />
         </section>
 
-        <section id="team" className="flex mt-20 bg-transparent">
+        <section id="team" className="flex justify-center mt-20 bg-transparent">
           <Team />
         </section>
 
-        <section id="gallery" className="flex mt-20 bg-transparent">
+        <section
+          id="gallery"
+          className="flex justify-center mt-20 bg-transparent"
+        >
           <Gallery />
         </section>
 

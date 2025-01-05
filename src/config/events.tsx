@@ -110,6 +110,7 @@ export const eventsConfig: EventItem[] = [
     imageURL:
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/hackathon.png",
     prize: "₹ 6K",
+    isOver: true,
     date: "10th Jan",
     content: () => {
       return (
@@ -343,7 +344,7 @@ export const eventsConfig: EventItem[] = [
     },
   },
   {
-    title: "Beyond the lines",
+    title: "Beyond the Lines",
     description: "Creative Writing",
     imageURL:
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/beyond_the_lines.png",

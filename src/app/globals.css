@@ -134,7 +134,8 @@ html {
   }
 
   .hero {
-    background: url("/images/hero.png") no-repeat center center;
+    background: url("https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/hero.png")
+      no-repeat center center;
     background-size: cover;
   }
 

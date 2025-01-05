@@ -12,11 +12,17 @@ export function Gallery() {
   ));
 
   return (
+<<<<<<< HEAD
     <div className="w-full flex flex-col items-center justify-center space-y-12">
       <div className="w-screen">
         <Heading heading="Gallery" />
         <Carousel items={cards} />
       </div>
+=======
+    <div className="w-screen flex flex-col items-center justify-center space-y-12">
+      <Heading heading="Gallery" />
+      <Carousel items={cards} />
+>>>>>>> development
     </div>
   );
 }

@@ -4,13 +4,15 @@ import { cn } from "@/lib/utils";
 
 import Heading from "../heading";
 import AnimatedGradientText from "../ui/animated-gradient-text";
+import Speaker from "./speaker";
 
 export function Speakers() {
   return (
     <div className="w-full flex flex-col items-center justify-center space-y-12">
       <Heading heading="Speakers" />
       <div className="w-full flex justify-center items-center">
-        <EmptyState />
+        {/* <EmptyState /> */}
+        <Speaker />
       </div>
     </div>
   );

@@ -7,6 +7,15 @@ import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Calendar, Trophy } from "lucide-react";
 
+import {
+  ResponsiveModal,
+  ResponsiveModalContent,
+  ResponsiveModalDescription,
+  ResponsiveModalHeader,
+  ResponsiveModalTitle,
+  ResponsiveModalTrigger,
+} from "@/components/ui/responsive-modal";
+
 import { useOutsideClick } from "@/hooks/use-outside-click";
 
 import {
@@ -101,7 +110,7 @@ export function EventsCards() {
                   priority
                   width={272}
                   height={272}
-                  src={active.imageURL}
+                  src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public${active.imageURL}`}
                   alt={active.title}
                   className="w-full max-md:h-[25vh] h-80 md:h-full md:rounded-br-3xl object-cover object-top"
                 />
@@ -161,14 +170,37 @@ export function EventsCards() {
                         More Details
                       </Link>
                     </div>
-                    <motion.a
-                      layoutId={`button-${active.title}-${id}`}
-                      href={RegistrationFromURL}
-                      target="_blank"
-                      className="px-4 py-3 text-sm rounded-full font-bold bg-primary text-foreground"
-                    >
-                      Register
-                    </motion.a>
+                    {!active.isOver ? (
+                      <motion.a
+                        layoutId={`button-${active.title}-${id}`}
+                        href={RegistrationFromURL}
+                        target="_blank"
+                        className="px-4 py-3 text-sm rounded-full font-bold bg-primary text-foreground"
+                      >
+                        Register
+                      </motion.a>
+                    ) : (
+                      <ResponsiveModal>
+                        <ResponsiveModalTrigger asChild>
+                          <motion.button
+                            layoutId={`button-${active.title}-${id}`}
+                            className="px-4 py-3 text-sm rounded-full font-bold bg-primary/50 text-background/75"
+                          >
+                            Register
+                          </motion.button>
+                        </ResponsiveModalTrigger>
+                        <ResponsiveModalContent>
+                          <ResponsiveModalHeader>
+                            <ResponsiveModalTitle>
+                              Registration Closed for this event!
+                            </ResponsiveModalTitle>
+                            <ResponsiveModalDescription>
+                              You cant't register anymore in this event.
+                            </ResponsiveModalDescription>
+                          </ResponsiveModalHeader>
+                        </ResponsiveModalContent>
+                      </ResponsiveModal>
+                    )}
                   </div>
                 </div>
               </div>
@@ -205,7 +237,8 @@ export function EventsCards() {
                 <Image
                   width={272}
                   height={272}
-                  src={card.imageURL}
+                  // src={card.imageURL}
+                  src={`https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public${card.imageURL}`}
                   alt={card.title}
                   className="h-60 w-60 rounded-lg object-cover object-top"
                 />
