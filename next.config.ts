@@ -11,8 +11,8 @@ const nextConfig: NextConfig = {
   },
   distDir: 'build',
 
-  // basePath: '/perceptron25',
-  // assetPrefix: '/home/debanjan/perceptron/perceptron2k25/build/',
+  basePath: '/perceptron25',
+  // assetPrefix: '/home/sayandasdev/perceptron25',
 
 
 
