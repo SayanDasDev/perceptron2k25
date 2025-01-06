@@ -1,3 +1,5 @@
+"use client";
+
 import { CalendarClock } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -75,7 +77,7 @@ const Workshop = () => {
                   </div>
                   <div className="text-xl  sm:text-3xl text-slate-500">
                     <span className="font-bold text-nowrap text-primary">
-                      11th Jan
+                      11<sup className="font-medium">th</sup> Jan
                     </span>{" "}
                     |{" "}
                     <span className="font-bold text-nowrap text-primary">
