@@ -1,3 +1,5 @@
+import { CalendarClock } from "lucide-react";
+
 import { cn } from "@/lib/utils";
 
 import EventRulesList from "../events/rules-list";
@@ -7,7 +9,7 @@ import { AnimatedTestimonials } from "../ui/animated-testimonials";
 import { BackgroundGradient } from "../ui/background-gradient";
 
 const Workshop = () => {
-  const testimonials = [
+  const data = [
     {
       quote:
         "Professor Pradip Ranjan Sengupta, an academic, author, filmmaker, and poet, has contributed extensively to literature, translations, and education.",
@@ -44,9 +46,9 @@ const Workshop = () => {
               >
                 Management Skill Development Workshop
               </span>
-
-              <div className="">
-                <div className=" mx-auto">
+              <div className="space-y-4">
+                <span className="text-xl text-primary">Topics Covered:</span>
+                <div className="mx-auto">
                   <EventRulesList
                     className="grid grid-cols-1 sm:grid-cols-2 items-start gap-2 space-y-0"
                     rules={[
@@ -63,9 +65,29 @@ const Workshop = () => {
                   />
                 </div>
               </div>
+              <div className="mx-auto w-fit flex text-slate-300 gap-4">
+                <div className="">
+                  <CalendarClock className="size-12 sm:size-16" />
+                </div>
+                <div className="flex-1 flex flex-col justify-center">
+                  <div className="text-base sm:text-lg leading-none text-nowrap text-slate-400">
+                    Join us on
+                  </div>
+                  <div className="text-xl  sm:text-3xl text-slate-500">
+                    <span className="font-bold text-nowrap text-primary">
+                      11th Jan
+                    </span>{" "}
+                    |{" "}
+                    <span className="font-bold text-nowrap text-primary">
+                      10:30 AM
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <span className="text-xl text-primary">Speakers:</span>
             </div>
           </AnimatedGradientText>
-          <AnimatedTestimonials testimonials={testimonials} autoplay={true} />
+          <AnimatedTestimonials testimonials={data} autoplay={true} />
         </BackgroundGradient>
       </div>
     </div>

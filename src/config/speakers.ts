@@ -12,7 +12,7 @@ export type SpeakerData = {
 
 export const speakersData: SpeakerData[] = [
   {
-    name: "Sourangshu Bhattacharya",
+    name: "Prof. Sourangshu Bhattacharya",
     image: "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/speaker_sourangshu.webp",
     designation: "Associate Professor",
     department: "Department of Computer Science and Engineering",
