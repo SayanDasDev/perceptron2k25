@@ -183,7 +183,7 @@ export const eventsConfig: EventItem[] = [
     description: "Gaming Competition",
     imageURL:
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/gaming.png",
-    prize: "₹ 6K",
+    prize: "₹ 4K",
     date: "10th Jan",
     content: () => {
       return (
@@ -227,7 +227,7 @@ export const eventsConfig: EventItem[] = [
     description: "Puzzle Solving Competition",
     imageURL:
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/puzzle.jpg",
-    prize: "₹ 6K",
+    prize: "₹ 4K",
     date: "10th Jan",
     content: () => {
       return (
