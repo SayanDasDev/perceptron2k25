@@ -171,7 +171,7 @@ export function EventsCards() {
                         More Details
                       </Link>
                     </div>
-                    {!active.isOver ? (
+                    {!active.overMessage ? (
                       <motion.a
                         layoutId={`button-${active.title}-${id}`}
                         href={RegistrationFromURL}
@@ -194,10 +194,10 @@ export function EventsCards() {
                           <ResponsiveModalHeader>
                             <ResponsiveModalTitle>
                               <Logos.closed className="size-36 -rotate-12 mx-auto" />
-                              Registration Closed for this event!
+                              {active.overMessage.title}
                             </ResponsiveModalTitle>
                             <ResponsiveModalDescription>
-                              You cant't register anymore in this event.
+                              {active.overMessage.desc}
                             </ResponsiveModalDescription>
                           </ResponsiveModalHeader>
                         </ResponsiveModalContent>

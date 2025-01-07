@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://cs.rkmvu.ac.in/perceptron25/sitemap.xml

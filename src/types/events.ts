@@ -4,7 +4,11 @@ export interface EventItem {
   imageURL: string
   prize: string
   date?: string
-  isOver?: boolean
+  // isOver?: boolean
+  overMessage?: {
+    title: string,
+    desc: string,
+  }
   //@ts-ignore
   content: () => JSX.Element
 }

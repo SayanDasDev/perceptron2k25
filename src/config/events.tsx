@@ -110,7 +110,11 @@ export const eventsConfig: EventItem[] = [
     imageURL:
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/hackathon.png",
     prize: "₹ 6K",
-    isOver: true,
+    // isOver: true,
+    overMessage: {
+      title: "Registration Closed for this event!",
+      desc: "You cant't register anymore in this event.",
+    },
     date: "10th Jan",
     content: () => {
       return (
@@ -277,6 +281,11 @@ export const eventsConfig: EventItem[] = [
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/auction.png",
     prize: "₹ 6K",
     date: "11th Jan",
+    overMessage: {
+      title:
+        "Registration is Closed for this event! NO SPOT REGISTRATION ALLOWED",
+      desc: "You cant't register anymore in this event.",
+    },
     content: () => {
       return (
         <EventRulesList
