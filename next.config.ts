@@ -9,9 +9,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Image optimization is disabled in static builds
   },
-  distDir: 'build',
+  // distDir: '../../perceptron25',
 
-  basePath: '/perceptron25',
+  // basePath: '/perceptron25',
   // assetPrefix: '/home/sayandasdev/perceptron25',
 
 
