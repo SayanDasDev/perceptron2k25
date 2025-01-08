@@ -13,6 +13,10 @@ export const eventsConfig: EventItem[] = [
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/quiz.png",
     prize: "₹ 6K",
     date: "11th Jan",
+    overMessage: {
+      title: "Registration Closed for this event!",
+      desc: "You cant't register anymore in this event.",
+    },
     content: () => {
       return (
         <EventRulesList
@@ -46,6 +50,10 @@ export const eventsConfig: EventItem[] = [
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/chess.jpg",
     prize: "₹ 6K",
     date: "10th Jan",
+    overMessage: {
+      title: "Registration Closed for this event!",
+      desc: "You cant't register anymore in this event.",
+    },
     content: () => {
       return (
         <EventRulesList
@@ -153,6 +161,10 @@ export const eventsConfig: EventItem[] = [
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/coding.jpg",
     prize: "₹ 6K",
     date: "11th Jan",
+    overMessage: {
+      title: "Registration Closed for this event!",
+      desc: "You cant't register anymore in this event.",
+    },
     content: () => {
       return (
         <EventRulesList
@@ -185,6 +197,10 @@ export const eventsConfig: EventItem[] = [
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/gaming.png",
     prize: "₹ 4K",
     date: "10th Jan",
+    overMessage: {
+      title: "Registration Closed for this event!",
+      desc: "You cant't register anymore in this event.",
+    },
     content: () => {
       return (
         <EventRulesList
@@ -229,6 +245,10 @@ export const eventsConfig: EventItem[] = [
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/puzzle.jpg",
     prize: "₹ 4K",
     date: "10th Jan",
+    overMessage: {
+      title: "Registration Closed for this event!",
+      desc: "You cant't register anymore in this event.",
+    },
     content: () => {
       return (
         <EventRulesList
@@ -358,6 +378,10 @@ export const eventsConfig: EventItem[] = [
     imageURL:
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/beyond_the_lines.png",
     prize: "₹ 4K",
+    overMessage: {
+      title: "Registration Closed for this event!",
+      desc: "You cant't register anymore in this event.",
+    },
     content: () => {
       return (
         <EventRulesList
@@ -416,6 +440,10 @@ export const eventsConfig: EventItem[] = [
     imageURL:
       "https://raw.githubusercontent.com/SayanDasDev/perceptron2k25/refs/heads/main/public/images/photography.png",
     prize: "₹ 4K",
+    overMessage: {
+      title: "Registration Closed for this event!",
+      desc: "You cant't register anymore in this event.",
+    },
     content: () => {
       return (
         <EventRulesList
