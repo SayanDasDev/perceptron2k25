@@ -14,7 +14,8 @@ export const eventsConfig: EventItem[] = [
     prize: "₹ 6K",
     date: "11th Jan",
     overMessage: {
-      title: "Registration Closed for this event!",
+      title:
+        "Registration Closed for this event! SPOT REGISTRATIONS FOR UPTO 10 TEAMS ALLOWED!! FIRST COME FIRST SERVE!!!",
       desc: "You cant't register anymore in this event.",
     },
     content: () => {
@@ -51,7 +52,7 @@ export const eventsConfig: EventItem[] = [
     prize: "₹ 6K",
     date: "10th Jan",
     overMessage: {
-      title: "Registration Closed for this event!",
+      title: "Registration Closed for this event! SPOT REGISTRATIONS ALLOWED!!",
       desc: "You cant't register anymore in this event.",
     },
     content: () => {
@@ -162,7 +163,8 @@ export const eventsConfig: EventItem[] = [
     prize: "₹ 6K",
     date: "11th Jan",
     overMessage: {
-      title: "Registration Closed for this event!",
+      title:
+        "Registration Closed for this event! 10 SPOT REGISTRATIONS ALLOWED!!",
       desc: "You cant't register anymore in this event.",
     },
     content: () => {
@@ -198,7 +200,7 @@ export const eventsConfig: EventItem[] = [
     prize: "₹ 4K",
     date: "10th Jan",
     overMessage: {
-      title: "Registration Closed for this event!",
+      title: "Registration Closed for this event! SPOT REGISTRATIONS ALLOWED!!",
       desc: "You cant't register anymore in this event.",
     },
     content: () => {
@@ -246,7 +248,7 @@ export const eventsConfig: EventItem[] = [
     prize: "₹ 4K",
     date: "10th Jan",
     overMessage: {
-      title: "Registration Closed for this event!",
+      title: "Registration Closed for this event! SPOT REGISTRATIONS ALLOWED!!",
       desc: "You cant't register anymore in this event.",
     },
     content: () => {
